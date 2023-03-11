@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-color: #1E293B;
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* Scroll */
+  .scroll-hidden::-webkit-scrollbar {
+    display: none;
+  }
+  .scroll-style::-webkit-scrollbar {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(101, 198, 141) rgb(75, 188, 122);
+  }
+  .scroll-style::-webkit-scrollbar {
+    @apply w-2;
+  }
+  .scroll-style::-webkit-scrollbar-track {
+    @apply bg-slate-700;
+  }
+  .scroll-style::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-gradient-to-tr from-blue-200 to-green-200 via-teal-200;
+  }
+}
+
+body {
+  background-color: #1e293b;
 }
