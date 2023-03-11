@@ -3,9 +3,39 @@ import React from "react";
 const Sidebar = () => {
   return (
     <>
-      <div>
-        <div className="fixed top-0 left-0 border-r border-gray-500 bg-slate-100 w-60 h-screen">
-          <h1>Hello World</h1>
+      <div className=" ">
+        <div className="">
+          <h1 className="text-3xl">Vuexy</h1>
+          <ul>
+            <li>
+              <span>Dashboard</span>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         </div>
       </div>
     </>
