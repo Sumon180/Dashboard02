@@ -39,14 +39,14 @@ const TopBar = () => {
               placeholder="Search"
               className=" bg-transparent border pl-4 rounded hidden lg:block"
             />
-            <div className="flex items-center justify-center w-10 h-10 hover:bg-slate-800 transition-all duration-100 rounded-full">
+            <div className="flex items-center justify-center lg:hidden w-10 h-10 hover:bg-slate-800 transition-all duration-100 rounded-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6 lg:hidden cursor-pointer"
+                className="w-6 h-6 cursor-pointer"
               >
                 <path
                   strokeLinecap="round"

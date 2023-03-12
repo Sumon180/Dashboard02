@@ -16,7 +16,7 @@ const Sidebar = () => {
           <h1 className="text-3xl my-3 px-3">Vuexy</h1>
           <div className="px-3 overflow-y-scroll h-[93vh] scroll-style">
             <ul className={`flex flex-col gap-2 z-50 `}>
-              <NavLink to="/dashboard">
+              <NavLink to="/">
                 <li
                   className={`${
                     mode ? "bg-slate-800" : "bg-slate-200"
@@ -66,7 +66,7 @@ const Sidebar = () => {
                   <span className={`text-slate-400`}>APPS & PAGES</span>
                 </li>
               </NavLink>
-              <NavLink to="/dashboard">
+              <NavLink to="/email">
                 <li
                   className={`${
                     mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
@@ -79,7 +79,7 @@ const Sidebar = () => {
                   <span>Email</span>
                 </li>
               </NavLink>
-              <NavLink to="/dashboard">
+              <NavLink to="/">
                 <li
                   className={`${
                     mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
@@ -105,7 +105,7 @@ const Sidebar = () => {
                   <span>Chat</span>
                 </li>
               </NavLink>
-              <NavLink to="/dashboard">
+              <NavLink to="/">
                 <li
                   className={`${
                     mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
@@ -131,7 +131,7 @@ const Sidebar = () => {
                   <span>Calender</span>
                 </li>
               </NavLink>
-              <NavLink to="/dashboard">
+              <NavLink to="/">
                 <li
                   className={`${
                     mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
@@ -160,7 +160,7 @@ const Sidebar = () => {
                   </svg>
                 </li>
               </NavLink>
-              <NavLink to="/dashboard">
+              <NavLink to="/">
                 <li
                   className={`${
                     mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
@@ -202,7 +202,7 @@ const Sidebar = () => {
                   </svg>
                 </li>
               </NavLink>
-              <NavLink to="/dashboard">
+              <NavLink to="/">
                 <li
                   className={`${
                     mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
@@ -231,7 +231,7 @@ const Sidebar = () => {
                   </svg>
                 </li>
               </NavLink>
-              <NavLink to="/dashboard">
+              <NavLink to="/">
                 <li
                   className={`flex items-center gap-3 w-full h-10 pl-2 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
@@ -240,7 +240,7 @@ const Sidebar = () => {
                   <span className={`text-slate-400`}>UI ELEMENTS</span>
                 </li>
               </NavLink>
-              <NavLink to="/dashboard">
+              <NavLink to="/">
                 <li
                   className={`${
                     mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
@@ -253,7 +253,7 @@ const Sidebar = () => {
                   <span>Typography</span>
                 </li>
               </NavLink>
-              <NavLink to="/dashboard">
+              <NavLink to="/">
                 <li
                   className={`${
                     mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
@@ -283,7 +283,7 @@ const Sidebar = () => {
                   <span>Icons</span>
                 </li>
               </NavLink>
-              <NavLink to="/dashboard">
+              <NavLink to="/">
                 <li
                   className={`${
                     mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
@@ -312,7 +312,7 @@ const Sidebar = () => {
                   </svg>
                 </li>
               </NavLink>
-              <NavLink to="/dashboard">
+              <NavLink to="/">
                 <li
                   className={`${
                     mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
@@ -341,7 +341,7 @@ const Sidebar = () => {
                   </svg>
                 </li>
               </NavLink>
-              <NavLink to="/dashboard">
+              <NavLink to="/">
                 <li
                   className={`flex items-center gap-3 w-full h-10 pl-2 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
@@ -350,7 +350,7 @@ const Sidebar = () => {
                   <span className={`text-slate-400`}>FORMS</span>
                 </li>
               </NavLink>
-              <NavLink to="/dashboard">
+              <NavLink to="/">
                 <li
                   className={`${
                     mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
@@ -391,7 +391,7 @@ const Sidebar = () => {
                   </svg>
                 </li>
               </NavLink>
-              <NavLink to="/dashboard">
+              <NavLink to="/">
                 <li
                   className={`${
                     mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
@@ -417,7 +417,7 @@ const Sidebar = () => {
                   <span>Form Layouts</span>
                 </li>
               </NavLink>
-              <NavLink to="/dashboard">
+              <NavLink to="/">
                 <li
                   className={`${
                     mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
@@ -443,7 +443,7 @@ const Sidebar = () => {
                   <span>Form Validation</span>
                 </li>
               </NavLink>
-              <NavLink to="/dashboard">
+              <NavLink to="/">
                 <li
                   className={`flex items-center gap-3 w-full h-10 pl-2 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
@@ -452,7 +452,7 @@ const Sidebar = () => {
                   <span className={`text-slate-400`}>CHARTS</span>
                 </li>
               </NavLink>
-              <NavLink to="/dashboard">
+              <NavLink to="/">
                 <li
                   className={`${
                     mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
@@ -494,7 +494,7 @@ const Sidebar = () => {
                   </svg>
                 </li>
               </NavLink>
-              <NavLink to="/dashboard">
+              <NavLink to="/">
                 <li
                   className={`flex items-center gap-3 w-full h-10 pl-2 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
@@ -503,7 +503,7 @@ const Sidebar = () => {
                   <span className={`text-slate-400`}>OTHERS</span>
                 </li>
               </NavLink>
-              <NavLink to="/dashboard">
+              <NavLink to="/">
                 <li
                   className={`${
                     mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
@@ -528,7 +528,7 @@ const Sidebar = () => {
                   <span>Access Control</span>
                 </li>
               </NavLink>
-              <NavLink to="/dashboard">
+              <NavLink to="/">
                 <li
                   className={`${
                     mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
@@ -569,7 +569,7 @@ const Sidebar = () => {
                   </svg>
                 </li>
               </NavLink>
-              <NavLink to="/dashboard">
+              <NavLink to="/">
                 <li
                   className={`${
                     mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
@@ -594,7 +594,7 @@ const Sidebar = () => {
                   <span>Disabled Menu</span>
                 </li>
               </NavLink>
-              <NavLink to="/dashboard">
+              <NavLink to="/">
                 <li
                   className={`${
                     mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
@@ -619,7 +619,7 @@ const Sidebar = () => {
                   <span>Raise Support</span>
                 </li>
               </NavLink>
-              <NavLink to="/dashboard">
+              <NavLink to="/">
                 <li
                   className={`${
                     mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
