@@ -1,3 +1,5 @@
+import profile from "../assets/image/profile.jpg";
+
 export const navLinks = [
   {
     title: "Dashboard",
@@ -124,5 +126,20 @@ export const navLinks = [
         name: "Documentation",
       },
     ],
+  },
+];
+
+export const emails = [
+  {
+    id: 1,
+    imgUrl: profile,
+    name: "Charles Cooper",
+    text: "Fight account night short.",
+  },
+  {
+    id: 2,
+    imgUrl: profile,
+    name: "Jennifer Garcia",
+    text: "Simply idea project health prevent beyond both after",
   },
 ];
