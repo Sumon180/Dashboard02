@@ -9,15 +9,19 @@ const TopBar = () => {
   return (
     <>
       <div
-        className={`flex items-center justify-between fixed top-0 right-0 left-60  z-40 opacity-90 px-5 py-2 ${
-          mode ? "bg-slate-800" : "bg-white"
+        className={`flex items-center justify-between fixed top-0 right-0 left-60  z-40 px-5 py-2 ${
+          mode ? "bg-black text-slate-300" : "bg-white text-slate-800"
         }`}
       >
-        <div className="flex items-center justify-between bg-slate-800 z-50 rounded-md border px-7 py-2 w-full">
+        <div
+          className={`flex items-center justify-between z-50 rounded-md border px-7 py-2 w-full ${
+            mode ? "bg-black text-slate-300" : "bg-white text-slate-800"
+          }`}
+        >
           <input
             type="text"
             placeholder="Search"
-            className=" bg-transparent border pl-4"
+            className=" bg-transparent border pl-4 rounded"
           />
           <div className="flex items-center gap-5">
             <div

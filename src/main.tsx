@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import router from "./routes";
-import LoadingSpinner from "./pages/LoadingPage";
+import LoadingSpinner from "./layout/LoadingPage";
 import { Provider } from "react-redux";
 import { Store } from "./app/Store";
 

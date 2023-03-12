@@ -3,18 +3,24 @@ import { TbFileInvoice, TbTypography } from "react-icons/tb";
 import { MdOutlineContactPage } from "react-icons/md";
 import { RxCardStackMinus, RxComponent1 } from "react-icons/rx";
 import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { toggleDarkMode } from "../app/darkModeSlice";
 
 const Sidebar = () => {
+  const mode = useSelector(toggleDarkMode);
+
   return (
     <>
-      <div className="">
+      <div className={`${mode ? "" : "bg-white text-slate-800"}`}>
         <div className="">
           <h1 className="text-3xl my-3 px-3">Vuexy</h1>
-          <div className="px-3 overflow-y-scroll h-[94vh] scroll-style">
-            <ul className="flex flex-col gap-2 z-50">
+          <div className="px-3 overflow-y-scroll h-[93vh] scroll-style">
+            <ul className={`flex flex-col gap-2 z-50 `}>
               <NavLink to="/dashboard">
                 <li
-                  className={`flex items-center justify-between w-full h-10 pl-2 bg-[#2c3951]  cursor-pointer  rounded hover:bg-blue-gray-100"
+                  className={`${
+                    mode ? "bg-slate-800" : "bg-slate-200"
+                  } flex items-center justify-between w-full h-10 pl-2 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
                 >
@@ -33,7 +39,7 @@ const Sidebar = () => {
                         d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
                       />
                     </svg>
-                    <span className={`text-white`}>Dashboard</span>
+                    <span>Dashboard</span>
                   </div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -62,18 +68,22 @@ const Sidebar = () => {
               </NavLink>
               <NavLink to="/dashboard">
                 <li
-                  className={`flex items-center gap-3 w-full h-10 pl-2 hover:bg-[#2c3951]  cursor-pointer  rounded hover:bg-blue-gray-100"
+                  className={`${
+                    mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
+                  } flex items-center gap-3 w-full h-10 pl-2 hover:bg-slate-200  cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
                 >
                   <AiOutlineMail className="w-6 h-6" />
 
-                  <span className={`text-white`}>Email</span>
+                  <span>Email</span>
                 </li>
               </NavLink>
               <NavLink to="/dashboard">
                 <li
-                  className={`flex items-center gap-3 w-full h-10 pl-2 hover:bg-[#2c3951] cursor-pointer  rounded hover:bg-blue-gray-100"
+                  className={`${
+                    mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
+                  } flex items-center gap-3 w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
                 >
@@ -92,12 +102,14 @@ const Sidebar = () => {
                     />
                   </svg>
 
-                  <span className={`text-white`}>Chat</span>
+                  <span>Chat</span>
                 </li>
               </NavLink>
               <NavLink to="/dashboard">
                 <li
-                  className={`flex items-center gap-3 w-full h-10 pl-2 hover:bg-[#2c3951] cursor-pointer  rounded hover:bg-blue-gray-100"
+                  className={`${
+                    mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
+                  } flex items-center gap-3 w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
                 >
@@ -116,19 +128,21 @@ const Sidebar = () => {
                     />
                   </svg>
 
-                  <span className={`text-white`}>Calender</span>
+                  <span>Calender</span>
                 </li>
               </NavLink>
               <NavLink to="/dashboard">
                 <li
-                  className={`flex items-center justify-between w-full h-10 pl-2 hover:bg-[#2c3951] cursor-pointer  rounded hover:bg-blue-gray-100"
+                  className={`${
+                    mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
+                  } flex items-center justify-between w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
                 >
                   <div className="flex items-center gap-3">
                     <TbFileInvoice className="w-6 h-6" />
 
-                    <span className={`text-white`}>Invoice</span>
+                    <span>Invoice</span>
                   </div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -148,7 +162,9 @@ const Sidebar = () => {
               </NavLink>
               <NavLink to="/dashboard">
                 <li
-                  className={`flex items-center justify-between w-full h-10 pl-2 hover:bg-[#2c3951] cursor-pointer  rounded hover:bg-blue-gray-100"
+                  className={`${
+                    mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
+                  } flex items-center justify-between w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
                 >
@@ -168,7 +184,7 @@ const Sidebar = () => {
                       />
                     </svg>
 
-                    <span className={`text-white`}>User</span>
+                    <span>User</span>
                   </div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -188,14 +204,16 @@ const Sidebar = () => {
               </NavLink>
               <NavLink to="/dashboard">
                 <li
-                  className={`flex items-center justify-between w-full h-10 pl-2 hover:bg-[#2c3951] cursor-pointer  rounded hover:bg-blue-gray-100"
+                  className={`${
+                    mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
+                  } flex items-center justify-between w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
                 >
                   <div className="flex items-center gap-3">
                     <MdOutlineContactPage className="w-6 h-6" />
 
-                    <span className={`text-white`}>Pages</span>
+                    <span>Pages</span>
                   </div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -224,18 +242,22 @@ const Sidebar = () => {
               </NavLink>
               <NavLink to="/dashboard">
                 <li
-                  className={`flex items-center gap-3 w-full h-10 pl-2 hover:bg-[#2c3951] cursor-pointer  rounded hover:bg-blue-gray-100"
+                  className={`${
+                    mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
+                  } flex items-center gap-3 w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
                 >
                   <TbTypography className="w-6 h-6" />
 
-                  <span className={`text-white`}>Typography</span>
+                  <span>Typography</span>
                 </li>
               </NavLink>
               <NavLink to="/dashboard">
                 <li
-                  className={`flex items-center gap-3 w-full h-10 pl-2 hover:bg-[#2c3951] cursor-pointer  rounded hover:bg-blue-gray-100"
+                  className={`${
+                    mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
+                  } flex items-center gap-3 w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
                 >
@@ -258,19 +280,21 @@ const Sidebar = () => {
                       d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
                     />
                   </svg>
-                  <span className={`text-white`}>Icons</span>
+                  <span>Icons</span>
                 </li>
               </NavLink>
               <NavLink to="/dashboard">
                 <li
-                  className={`flex items-center justify-between w-full h-10 pl-2 hover:bg-[#2c3951] cursor-pointer  rounded hover:bg-blue-gray-100"
+                  className={`${
+                    mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
+                  } flex items-center justify-between w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
                 >
                   <div className="flex items-center gap-3">
                     <RxCardStackMinus className="w-6 h-6" />
 
-                    <span className={`text-white`}>Cards</span>
+                    <span>Cards</span>
                   </div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -290,14 +314,16 @@ const Sidebar = () => {
               </NavLink>
               <NavLink to="/dashboard">
                 <li
-                  className={`flex items-center justify-between gap-3 w-full h-10 pl-2 hover:bg-[#2c3951] cursor-pointer  rounded hover:bg-blue-gray-100"
+                  className={`${
+                    mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
+                  } flex items-center justify-between gap-3 w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
                 >
                   <div className="flex items-center gap-3">
                     <RxComponent1 className="w-6 h-6" />
 
-                    <span className={`text-white`}>Components</span>
+                    <span>Components</span>
                   </div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -326,7 +352,9 @@ const Sidebar = () => {
               </NavLink>
               <NavLink to="/dashboard">
                 <li
-                  className={`flex items-center justify-between w-full h-10 pl-2 hover:bg-[#2c3951] cursor-pointer  rounded hover:bg-blue-gray-100"
+                  className={`${
+                    mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
+                  } flex items-center justify-between w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
                 >
@@ -345,7 +373,7 @@ const Sidebar = () => {
                         d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75"
                       />
                     </svg>
-                    <span className={`text-white`}>Form Elemens</span>
+                    <span>Form Elemens</span>
                   </div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -365,7 +393,9 @@ const Sidebar = () => {
               </NavLink>
               <NavLink to="/dashboard">
                 <li
-                  className={`flex items-center gap-3 w-full h-10 pl-2 hover:bg-[#2c3951] cursor-pointer  rounded hover:bg-blue-gray-100"
+                  className={`${
+                    mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
+                  } flex items-center gap-3 w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
                 >
@@ -384,12 +414,14 @@ const Sidebar = () => {
                     />
                   </svg>
 
-                  <span className={`text-white`}>Form Layouts</span>
+                  <span>Form Layouts</span>
                 </li>
               </NavLink>
               <NavLink to="/dashboard">
                 <li
-                  className={`flex items-center gap-3 w-full h-10 pl-2 hover:bg-[#2c3951] cursor-pointer  rounded hover:bg-blue-gray-100"
+                  className={`${
+                    mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
+                  } flex items-center gap-3 w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
                 >
@@ -408,7 +440,7 @@ const Sidebar = () => {
                     />
                   </svg>
 
-                  <span className={`text-white`}>Form Validation</span>
+                  <span>Form Validation</span>
                 </li>
               </NavLink>
               <NavLink to="/dashboard">
@@ -422,7 +454,9 @@ const Sidebar = () => {
               </NavLink>
               <NavLink to="/dashboard">
                 <li
-                  className={`flex items-center justify-between w-full h-10 pl-2 hover:bg-[#2c3951] cursor-pointer  rounded hover:bg-blue-gray-100"
+                  className={`${
+                    mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
+                  } flex items-center justify-between w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
                 >
@@ -442,7 +476,7 @@ const Sidebar = () => {
                       />
                     </svg>
 
-                    <span className={`text-white`}>Charts</span>
+                    <span>Charts</span>
                   </div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -471,7 +505,9 @@ const Sidebar = () => {
               </NavLink>
               <NavLink to="/dashboard">
                 <li
-                  className={`flex items-center gap-3 w-full h-10 pl-2 hover:bg-[#2c3951] cursor-pointer  rounded hover:bg-blue-gray-100"
+                  className={`${
+                    mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
+                  } flex items-center gap-3 w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
                 >
@@ -489,12 +525,14 @@ const Sidebar = () => {
                       d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
                     />
                   </svg>
-                  <span className={`text-white`}>Access Control</span>
+                  <span>Access Control</span>
                 </li>
               </NavLink>
               <NavLink to="/dashboard">
                 <li
-                  className={`flex items-center justify-between w-full h-10 pl-2 hover:bg-[#2c3951] cursor-pointer  rounded hover:bg-blue-gray-100"
+                  className={`${
+                    mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
+                  } flex items-center justify-between w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
                 >
@@ -513,7 +551,7 @@ const Sidebar = () => {
                         d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                       />
                     </svg>
-                    <span className={`text-white`}>Nav Levels</span>
+                    <span>Nav Levels</span>
                   </div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -533,7 +571,9 @@ const Sidebar = () => {
               </NavLink>
               <NavLink to="/dashboard">
                 <li
-                  className={`flex items-center gap-3 w-full h-10 pl-2 hover:bg-[#2c3951] cursor-pointer  rounded hover:bg-blue-gray-100"
+                  className={`${
+                    mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
+                  } flex items-center gap-3 w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
                 >
@@ -551,12 +591,14 @@ const Sidebar = () => {
                       d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88"
                     />
                   </svg>
-                  <span className={`text-white`}>Disabled Menu</span>
+                  <span>Disabled Menu</span>
                 </li>
               </NavLink>
               <NavLink to="/dashboard">
                 <li
-                  className={`flex items-center gap-3 w-full h-10 pl-2 hover:bg-[#2c3951] cursor-pointer  rounded hover:bg-blue-gray-100"
+                  className={`${
+                    mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
+                  } flex items-center gap-3 w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
                 >
@@ -574,12 +616,14 @@ const Sidebar = () => {
                       d="M10.05 4.575a1.575 1.575 0 10-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 013.15 0v1.5m-3.15 0l.075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 013.15 0V15M6.9 7.575a1.575 1.575 0 10-3.15 0v8.175a6.75 6.75 0 006.75 6.75h2.018a5.25 5.25 0 003.712-1.538l1.732-1.732a5.25 5.25 0 001.538-3.712l.003-2.024a.668.668 0 01.198-.471 1.575 1.575 0 10-2.228-2.228 3.818 3.818 0 00-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0116.35 15m.002 0h-.002"
                     />
                   </svg>
-                  <span className={`text-white`}>Raise Support</span>
+                  <span>Raise Support</span>
                 </li>
               </NavLink>
               <NavLink to="/dashboard">
                 <li
-                  className={`flex items-center gap-3 w-full h-10 pl-2 hover:bg-[#2c3951] cursor-pointer  rounded hover:bg-blue-gray-100"
+                  className={`${
+                    mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
+                  } flex items-center gap-3 w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
                 >
@@ -597,7 +641,7 @@ const Sidebar = () => {
                       d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
                     />
                   </svg>
-                  <span className={`text-white`}>Documentation</span>
+                  <span>Documentation</span>
                 </li>
               </NavLink>
             </ul>

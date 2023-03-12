@@ -1,7 +1,8 @@
 import React from "react";
 import { RouteObject } from "react-router-dom";
-import Contact from "../pages/Contact";
-import ErrorPage from "../pages/ErrorPage";
+import ErrorPage from "../layout/ErrorPage";
+import Home from "../pages/Dashboard";
+import Dashboard from "../pages/Dashboard";
 
 const App = React.lazy(() => import("../App"));
 
@@ -12,8 +13,8 @@ const router: RouteObject[] = [
     errorElement: <ErrorPage />,
   },
   {
-    path: "/contact",
-    element: <Contact />,
+    path: "/dashboard",
+    element: <Dashboard />,
   },
 ];
 
