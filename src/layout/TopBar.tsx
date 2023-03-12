@@ -9,7 +9,7 @@ const TopBar = () => {
   return (
     <>
       <div
-        className={`flex items-center justify-between fixed top-0 right-0 left-60  z-40 px-5 py-2 ${
+        className={`flex items-center justify-between fixed top-0 right-0 lg:left-60 left-0  z-40 px-5 py-2 ${
           mode ? "bg-black text-slate-300" : "bg-white text-slate-800"
         }`}
       >
@@ -18,11 +18,44 @@ const TopBar = () => {
             mode ? "bg-black text-slate-300" : "bg-white text-slate-800"
           }`}
         >
-          <input
-            type="text"
-            placeholder="Search"
-            className=" bg-transparent border pl-4 rounded"
-          />
+          <div className="flex items-center gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6 lg:hidden cursor-pointer"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+
+            <input
+              type="text"
+              placeholder="Search"
+              className=" bg-transparent border pl-4 rounded hidden lg:block"
+            />
+            <div className="flex items-center justify-center w-10 h-10 hover:bg-slate-800 transition-all duration-100 rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6 lg:hidden cursor-pointer"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+            </div>
+          </div>
           <div className="flex items-center gap-5">
             <div
               onClick={() => dispatch(toggleMode())}
