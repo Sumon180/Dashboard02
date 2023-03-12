@@ -9,7 +9,7 @@ const TopBar = () => {
   return (
     <>
       <div
-        className={`flex items-center justify-between fixed top-0 right-0 lg:left-60 left-0  z-40 px-5 py-2 ${
+        className={`fixed right-0 left-60 flex items-center justify-between z-40 px-5 py-2 ${
           mode ? "bg-black text-slate-300" : "bg-white text-slate-800"
         }`}
       >

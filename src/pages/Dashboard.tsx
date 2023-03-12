@@ -24,7 +24,7 @@ function Dashboard() {
                 mode ? "bg-black text-slate-300" : "bg-white text-slate-800"
               }`}
             >
-              <div className="relative mx-5 mt-[4.65rem]">
+              <div className="relative mx-5">
                 <div className="pt-5">
                   <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
