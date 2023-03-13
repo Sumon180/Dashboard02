@@ -1,7 +1,7 @@
 import React from "react";
 import { RouteObject } from "react-router-dom";
 import ErrorPage from "../layout/ErrorPage";
-import Home from "../pages/Dashboard";
+import Chat from "../pages/Chat";
 import Email from "../pages/Email";
 
 const Dashboard = React.lazy(() => import("../pages/Dashboard"));
@@ -15,6 +15,10 @@ const router: RouteObject[] = [
   {
     path: "email",
     element: <Email />,
+  },
+  {
+    path: "chat",
+    element: <Chat />,
   },
 ];
 
