@@ -527,288 +527,326 @@ const Chatmain = () => {
               </div>
 
               <div className="flex items-end justify-between">
-                <ul className="overflow-y-scroll h-[64vh] w-full scroll-style">
-                  <li className="flex items-center justify-between my-3 ml-5">
-                    <div className="flex items-start gap-4">
-                      <div className="relative w-8 h-8">
-                        <img
-                          src={profile}
-                          alt="profile/img"
-                          className="w-8 h-8 rounded-full"
-                        />
+                <ul className="overflow-y-scroll h-[64vh] w-full scroll-style ">
+                  <div className="mx-5">
+                    <li className="flex items-center justify-between my-3 ml-5">
+                      <div className="flex items-start gap-4">
+                        <div className="relative w-8 h-8">
+                          <img
+                            src={profile}
+                            alt="profile/img"
+                            className="w-8 h-8 rounded-full"
+                          />
+                        </div>
+                        <div>
+                          <p className="max-w-[45rem] bg-slate-700 rounded-tr-2xl rounded-bl-2xl py-2 px-5">
+                            Fight account night night night Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Nostrum eius
+                            quae voluptates soluta necessitatibus officiis
+                            ratione, ut, culpa facilis eaque autem. Laborum
+                            velit aspernatur culpa consectetur sit distinctio,
+                            sed, accusamus similique autem quam blanditiis
+                            pariatur consequuntur voluptatum rerum quia iure.
+                            Accusantium voluptatibus, aut voluptatem laboriosam
+                            sed pariatur assumenda sint? Sit sint commodi atque
+                            eveniet enim laboriosam
+                          </p>
+                        </div>
                       </div>
-                      <div>
-                        <p className="max-w-[45rem] bg-slate-700 rounded-tr-2xl rounded-bl-2xl py-2 px-5">
-                          Fight account night night night Lorem ipsum dolor sit
-                          amet consectetur adipisicing elit. Nostrum eius quae
-                          voluptates soluta necessitatibus officiis ratione, ut,
-                          culpa facilis eaque autem. Laborum velit aspernatur
-                          culpa consectetur sit distinctio, sed, accusamus
-                          similique autem quam blanditiis pariatur consequuntur
-                          voluptatum rerum quia iure. Accusantium voluptatibus,
-                          aut voluptatem laboriosam sed pariatur assumenda sint?
-                          Sit sint commodi atque eveniet enim laboriosam
-                        </p>
+                    </li>
+                    <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
+                      <div className="flex flex-row-reverse items-start gap-4">
+                        <div className="relative w-8 h-8">
+                          <img
+                            src={profile}
+                            alt="profile/img"
+                            className="w-8 h-8 rounded-full"
+                          />
+                        </div>
+                        <div>
+                          <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Nisi dignissimos rerum veritatis quod quasi
+                            necessitatibus illum, quisquam dolore nihil ipsa
+                            aperiam delectus cumque porro illo optio nostrum
+                            perspiciatis qui aspernatur harum iste minima?
+                            Maiores numquam vitae quas ex impedit provident ut
+                            consequuntur, excepturi id pariatur mollitia esse
+                            quisquam distinctio itaque!
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li className="flex flex-row-reverse items-center justify-between mr-5">
-                    <div className="flex flex-row-reverse items-start gap-4">
-                      <div className="relative w-[10%]">
-                        <img
-                          src={profile}
-                          alt="profile/img"
-                          className="w-8 h-8 rounded-full"
-                        />
+                    </li>
+                    <li className="flex items-center justify-between ml-5 my-2">
+                      <div className="flex items-start gap-4">
+                        <div className="relative w-8 h-8">
+                          <img
+                            src={profile}
+                            alt="profile/img"
+                            className="w-8 h-8 rounded-full"
+                          />
+                        </div>
+                        <div>
+                          <p className="max-w-[45rem] bg-slate-700 rounded-tr-2xl rounded-bl-2xl py-2 px-5">
+                            Hello
+                          </p>
+                        </div>
                       </div>
-                      <div>
-                        <p className="max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
-                          Fight account night night night Lorem ipsum dolor sit
-                          amet consectetur adipisicing elit. Nostrum eius quae
-                          voluptates soluta necessitatibus officiis ratione, ut,
-                          culpa facilis eaque autem. Laborum velit aspernatur
-                          culpa consectetur sit distinctio, sed, accusamus sequi
-                          esse itaque officiis dicta neque sit tenetur at
-                          voluptates hic autem repudiandae fugiat est molestiae
-                          illo. Dicta fugiat nesciunt dignissimos eveniet
-                          suscipit saepe sequi quidem!
-                        </p>
+                    </li>
+                    <li className="flex items-center justify-between  ml-5 my-2">
+                      <div className="flex items-start gap-4">
+                        <div className="relative w-8 h-8">
+                          <img
+                            src={profile}
+                            alt="profile/img"
+                            className="w-8 h-8 rounded-full"
+                          />
+                        </div>
+                        <div>
+                          <p className="max-w-[45rem] bg-slate-700 rounded-tr-2xl rounded-bl-2xl py-2 px-5">
+                            Hello
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li className="flex items-center justify-between my-3 ml-5 my-2">
-                    <div className="flex items-start gap-4">
-                      <div className="relative w-8 h-8">
-                        <img
-                          src={profile}
-                          alt="profile/img"
-                          className="w-8 h-8 rounded-full"
-                        />
+                    </li>
+                    <li className="flex items-center justify-between ml-5 my-2">
+                      <div className="flex items-start gap-4">
+                        <div className="relative w-8 h-8">
+                          <img
+                            src={profile}
+                            alt="profile/img"
+                            className="w-8 h-8 rounded-full"
+                          />
+                        </div>
+                        <div>
+                          <p className="max-w-[45rem] bg-slate-700 rounded-tr-2xl rounded-bl-2xl py-2 px-5">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Veritatis enim, voluptatum rerum laudantium
+                            esse
+                          </p>
+                        </div>
                       </div>
-                      <div>
-                        <p className="max-w-[45rem] bg-slate-700 rounded-tr-2xl rounded-bl-2xl py-2 px-5">
-                          Hello
-                        </p>
+                    </li>
+                    <li className="flex items-center justify-between  ml-5 my-2">
+                      <div className="flex items-start gap-4">
+                        <div className="relative w-8 h-8">
+                          <img
+                            src={profile}
+                            alt="profile/img"
+                            className="w-8 h-8 rounded-full"
+                          />
+                        </div>
+                        <div>
+                          <p className="max-w-[45rem] bg-slate-700 rounded-tr-2xl rounded-bl-2xl py-2 px-5">
+                            Hi there
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li className="flex items-center justify-between my-3 ml-5 my-2">
-                    <div className="flex items-start gap-4">
-                      <div className="relative w-8 h-8">
-                        <img
-                          src={profile}
-                          alt="profile/img"
-                          className="w-8 h-8 rounded-full"
-                        />
+                    </li>
+                    <li className="flex items-center justify-between ml-5 my-2">
+                      <div className="flex items-start gap-4">
+                        <div className="relative w-8 h-8">
+                          <img
+                            src={profile}
+                            alt="profile/img"
+                            className="w-8 h-8 rounded-full"
+                          />
+                        </div>
+                        <div>
+                          <p className="max-w-[45rem] bg-slate-700 rounded-tr-2xl rounded-bl-2xl py-2 px-5">
+                            Hello
+                          </p>
+                        </div>
                       </div>
-                      <div>
-                        <p className="max-w-[45rem] bg-slate-700 rounded-tr-2xl rounded-bl-2xl py-2 px-5">
-                          Hello
-                        </p>
+                    </li>
+                    <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
+                      <div className="flex flex-row-reverse items-start gap-4">
+                        <div className="relative w-8 h-8">
+                          <img
+                            src={profile}
+                            alt="profile/img"
+                            className="w-8 h-8 rounded-full"
+                          />
+                        </div>
+                        <div>
+                          <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
+                            Hi...
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li className="flex items-center justify-between my-3 ml-5 my-2">
-                    <div className="flex items-start gap-4">
-                      <div className="relative w-8 h-8">
-                        <img
-                          src={profile}
-                          alt="profile/img"
-                          className="w-8 h-8 rounded-full"
-                        />
+                    </li>
+                    <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
+                      <div className="flex flex-row-reverse items-start gap-4">
+                        <div className="relative w-8 h-8">
+                          <img
+                            src={profile}
+                            alt="profile/img"
+                            className="w-8 h-8 rounded-full"
+                          />
+                        </div>
+                        <div>
+                          <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
+                            Hi...
+                          </p>
+                        </div>
                       </div>
-                      <div>
-                        <p className="max-w-[45rem] bg-slate-700 rounded-tr-2xl rounded-bl-2xl py-2 px-5">
-                          Lorem ipsum dolor sit, amet consectetur adipisicing
-                          elit. Veritatis enim, voluptatum rerum laudantium esse
-                        </p>
+                    </li>
+                    <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
+                      <div className="flex flex-row-reverse items-start gap-4">
+                        <div className="relative w-8 h-8">
+                          <img
+                            src={profile}
+                            alt="profile/img"
+                            className="w-8 h-8 rounded-full"
+                          />
+                        </div>
+                        <div>
+                          <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
+                            Hi...
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li className="flex items-center justify-between my-3 ml-5 my-2">
-                    <div className="flex items-start gap-4">
-                      <div className="relative w-8 h-8">
-                        <img
-                          src={profile}
-                          alt="profile/img"
-                          className="w-8 h-8 rounded-full"
-                        />
+                    </li>
+                    <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
+                      <div className="flex flex-row-reverse items-start gap-4">
+                        <div className="relative w-8 h-8">
+                          <img
+                            src={profile}
+                            alt="profile/img"
+                            className="w-8 h-8 rounded-full"
+                          />
+                        </div>
+                        <div>
+                          <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
+                            Hi...
+                          </p>
+                        </div>
                       </div>
-                      <div>
-                        <p className="max-w-[45rem] bg-slate-700 rounded-tr-2xl rounded-bl-2xl py-2 px-5">
-                          Hi there
-                        </p>
+                    </li>
+                    <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
+                      <div className="flex flex-row-reverse items-start gap-4">
+                        <div className="relative w-8 h-8">
+                          <img
+                            src={profile}
+                            alt="profile/img"
+                            className="w-8 h-8 rounded-full"
+                          />
+                        </div>
+                        <div>
+                          <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
+                            Hi...
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li className="flex items-center justify-between my-3 ml-5 my-2">
-                    <div className="flex items-start gap-4">
-                      <div className="relative w-8 h-8">
-                        <img
-                          src={profile}
-                          alt="profile/img"
-                          className="w-8 h-8 rounded-full"
-                        />
+                    </li>
+                    <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
+                      <div className="flex flex-row-reverse items-start gap-4">
+                        <div className="relative w-8 h-8">
+                          <img
+                            src={profile}
+                            alt="profile/img"
+                            className="w-8 h-8 rounded-full"
+                          />
+                        </div>
+                        <div>
+                          <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
+                            Hi...
+                          </p>
+                        </div>
                       </div>
-                      <div>
-                        <p className="max-w-[45rem] bg-slate-700 rounded-tr-2xl rounded-bl-2xl py-2 px-5">
-                          Hello
-                        </p>
+                    </li>
+                    <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
+                      <div className="flex flex-row-reverse items-start gap-4">
+                        <div className="relative w-8 h-8">
+                          <img
+                            src={profile}
+                            alt="profile/img"
+                            className="w-8 h-8 rounded-full"
+                          />
+                        </div>
+                        <div>
+                          <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
+                            Hi...
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
-                    <div className="flex flex-row-reverse items-start gap-4">
-                      <div className="relative w-8 h-8">
-                        <img
-                          src={profile}
-                          alt="profile/img"
-                          className="w-8 h-8 rounded-full"
-                        />
+                    </li>
+                    <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
+                      <div className="flex flex-row-reverse items-start gap-4">
+                        <div className="relative w-8 h-8">
+                          <img
+                            src={profile}
+                            alt="profile/img"
+                            className="w-8 h-8 rounded-full"
+                          />
+                        </div>
+                        <div>
+                          <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
+                            Hi...
+                          </p>
+                        </div>
                       </div>
-                      <div>
-                        <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
-                          Hi...
-                        </p>
+                    </li>
+                    <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
+                      <div className="flex flex-row-reverse items-start gap-4">
+                        <div className="relative w-8 h-8">
+                          <img
+                            src={profile}
+                            alt="profile/img"
+                            className="w-8 h-8 rounded-full"
+                          />
+                        </div>
+                        <div>
+                          <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
+                            Hi...
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
-                    <div className="flex flex-row-reverse items-start gap-4">
-                      <div className="relative w-8 h-8">
-                        <img
-                          src={profile}
-                          alt="profile/img"
-                          className="w-8 h-8 rounded-full"
-                        />
-                      </div>
-                      <div>
-                        <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
-                          Hi...
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
-                    <div className="flex flex-row-reverse items-start gap-4">
-                      <div className="relative w-8 h-8">
-                        <img
-                          src={profile}
-                          alt="profile/img"
-                          className="w-8 h-8 rounded-full"
-                        />
-                      </div>
-                      <div>
-                        <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
-                          Hi...
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
-                    <div className="flex flex-row-reverse items-start gap-4">
-                      <div className="relative w-8 h-8">
-                        <img
-                          src={profile}
-                          alt="profile/img"
-                          className="w-8 h-8 rounded-full"
-                        />
-                      </div>
-                      <div>
-                        <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
-                          Hi...
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
-                    <div className="flex flex-row-reverse items-start gap-4">
-                      <div className="relative w-8 h-8">
-                        <img
-                          src={profile}
-                          alt="profile/img"
-                          className="w-8 h-8 rounded-full"
-                        />
-                      </div>
-                      <div>
-                        <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
-                          Hi...
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
-                    <div className="flex flex-row-reverse items-start gap-4">
-                      <div className="relative w-8 h-8">
-                        <img
-                          src={profile}
-                          alt="profile/img"
-                          className="w-8 h-8 rounded-full"
-                        />
-                      </div>
-                      <div>
-                        <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
-                          Hi...
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
-                    <div className="flex flex-row-reverse items-start gap-4">
-                      <div className="relative w-8 h-8">
-                        <img
-                          src={profile}
-                          alt="profile/img"
-                          className="w-8 h-8 rounded-full"
-                        />
-                      </div>
-                      <div>
-                        <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
-                          Hi...
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
-                    <div className="flex flex-row-reverse items-start gap-4">
-                      <div className="relative w-8 h-8">
-                        <img
-                          src={profile}
-                          alt="profile/img"
-                          className="w-8 h-8 rounded-full"
-                        />
-                      </div>
-                      <div>
-                        <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
-                          Hi...
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
-                    <div className="flex flex-row-reverse items-start gap-4">
-                      <div className="relative w-8 h-8">
-                        <img
-                          src={profile}
-                          alt="profile/img"
-                          className="w-8 h-8 rounded-full"
-                        />
-                      </div>
-                      <div>
-                        <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
-                          Hi...
-                        </p>
-                      </div>
-                    </div>
-                  </li>
+                    </li>
+                  </div>
                 </ul>
               </div>
-              <div className="my-10 mx-5">
+              <div className="flex items-center bg-slate-700 my-10 mx-5 h-14 border border-indigo-400 rounded-md">
                 <input
                   type="text"
                   placeholder="Type your message..."
-                  className="bg-transparent h-10 pl-4 border border-indigo-400 outline-none rounded-md w-full"
+                  className="bg-transparent outline-none w-full h-full pl-4"
                 />
+                <div className="flex items-center gap-1 mr-3">
+                  <div className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-indigo-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-6 h-6"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"
+                      />
+                    </svg>
+                  </div>
+                  <div className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-indigo-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-6 h-6"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13"
+                      />
+                    </svg>
+                  </div>
+                  <button className="bg-indigo-400 py-2 px-5 rounded-md">Send</button>
+                </div>
               </div>
             </div>
           </div>
