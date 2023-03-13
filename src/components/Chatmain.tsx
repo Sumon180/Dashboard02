@@ -28,7 +28,7 @@ const Chatmain = () => {
                   <input
                     type="text"
                     placeholder="Search..."
-                    className="bg-transparent h-10 pl-4 border border-indigo-400 outline-none rounded-md "
+                    className="bg-transparent h-10 w-full pl-4 border border-indigo-400 outline-none rounded-md "
                   />
                 </div>
                 <div className="px-5 overflow-y-scroll h-[73vh] scroll-style">
@@ -505,7 +505,7 @@ const Chatmain = () => {
             </div>
             <div className="w-full">
               <div className="flex items-center border-b py-2 pl-5 w-full gap-3">
-                <div className="flex items-center justify-between hover:bg-slate-700 rounded-md py-2">
+                <div className="flex items-center justify-between  py-2">
                   <div className="flex items-center gap-4">
                     <div className="relative">
                       <img
