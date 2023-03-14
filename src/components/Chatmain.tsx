@@ -34,7 +34,11 @@ const Chatmain = () => {
                 <div className="px-5 overflow-y-scroll h-[73vh] scroll-style">
                   <h3 className="text-2xl my-4">Chat</h3>
                   <ul className="flex flex-col gap-2">
-                    <li className="flex items-center justify-between bg-slate-700 rounded-md py-2 px-5">
+                    <li
+                      className={`${
+                        mode ? "bg-slate-700" : "bg-slate-200"
+                      } flex items-center justify-between rounded-md py-2 px-5`}
+                    >
                       <div className="flex items-center gap-4">
                         <div className="relative">
                           <img
@@ -56,7 +60,11 @@ const Chatmain = () => {
                         <span>12/2023</span>
                       </div>
                     </li>
-                    <li className="flex items-center justify-between hover:bg-slate-700 rounded-md py-2 px-5">
+                    <li
+                      className={`${
+                        mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      } flex items-center justify-between rounded-md py-2 px-5`}
+                    >
                       <div className="flex items-center gap-4">
                         <div className="relative">
                           <img
@@ -81,7 +89,11 @@ const Chatmain = () => {
                   </ul>
                   <h3 className="text-2xl my-4">Contacts</h3>
                   <ul className="flex flex-col gap-2">
-                    <li className="flex items-center justify-between hover:bg-slate-700 rounded-md py-2 px-5">
+                    <li
+                      className={`${
+                        mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      } flex items-center justify-between rounded-md py-2 px-5`}
+                    >
                       <div className="flex items-center gap-4">
                         <div className="relative">
                           <img
@@ -100,7 +112,11 @@ const Chatmain = () => {
                         </div>
                       </div>
                     </li>
-                    <li className="flex items-center justify-between hover:bg-slate-700 rounded-md py-2 px-5">
+                    <li
+                      className={`${
+                        mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      } flex items-center justify-between rounded-md py-2 px-5`}
+                    >
                       <div className="flex items-center gap-4">
                         <div className="relative">
                           <img
@@ -119,7 +135,11 @@ const Chatmain = () => {
                         </div>
                       </div>
                     </li>
-                    <li className="flex items-center justify-between hover:bg-slate-700 rounded-md py-2 px-5">
+                    <li
+                      className={`${
+                        mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      } flex items-center justify-between rounded-md py-2 px-5`}
+                    >
                       <div className="flex items-center gap-4">
                         <div className="relative">
                           <img
@@ -138,7 +158,11 @@ const Chatmain = () => {
                         </div>
                       </div>
                     </li>
-                    <li className="flex items-center justify-between hover:bg-slate-700 rounded-md py-2 px-5">
+                    <li
+                      className={`${
+                        mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      } flex items-center justify-between rounded-md py-2 px-5`}
+                    >
                       <div className="flex items-center gap-4">
                         <div className="relative">
                           <img
@@ -157,7 +181,11 @@ const Chatmain = () => {
                         </div>
                       </div>
                     </li>
-                    <li className="flex items-center justify-between hover:bg-slate-700 rounded-md py-2 px-5">
+                    <li
+                      className={`${
+                        mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      } flex items-center justify-between rounded-md py-2 px-5`}
+                    >
                       <div className="flex items-center gap-4">
                         <div className="relative">
                           <img
@@ -176,7 +204,11 @@ const Chatmain = () => {
                         </div>
                       </div>
                     </li>
-                    <li className="flex items-center justify-between hover:bg-slate-700 rounded-md py-2 px-5">
+                    <li
+                      className={`${
+                        mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      } flex items-center justify-between rounded-md py-2 px-5`}
+                    >
                       <div className="flex items-center gap-4">
                         <div className="relative">
                           <img
@@ -195,7 +227,11 @@ const Chatmain = () => {
                         </div>
                       </div>
                     </li>
-                    <li className="flex items-center justify-between hover:bg-slate-700 rounded-md py-2 px-5">
+                    <li
+                      className={`${
+                        mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      } flex items-center justify-between rounded-md py-2 px-5`}
+                    >
                       <div className="flex items-center gap-4">
                         <div className="relative">
                           <img
@@ -214,7 +250,11 @@ const Chatmain = () => {
                         </div>
                       </div>
                     </li>
-                    <li className="flex items-center justify-between hover:bg-slate-700 rounded-md py-2 px-5">
+                    <li
+                      className={`${
+                        mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      } flex items-center justify-between rounded-md py-2 px-5`}
+                    >
                       <div className="flex items-center gap-4">
                         <div className="relative">
                           <img
@@ -233,7 +273,11 @@ const Chatmain = () => {
                         </div>
                       </div>
                     </li>
-                    <li className="flex items-center justify-between hover:bg-slate-700 rounded-md py-2 px-5">
+                    <li
+                      className={`${
+                        mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      } flex items-center justify-between rounded-md py-2 px-5`}
+                    >
                       <div className="flex items-center gap-4">
                         <div className="relative">
                           <img
@@ -252,7 +296,11 @@ const Chatmain = () => {
                         </div>
                       </div>
                     </li>
-                    <li className="flex items-center justify-between hover:bg-slate-700 rounded-md py-2 px-5">
+                    <li
+                      className={`${
+                        mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      } flex items-center justify-between rounded-md py-2 px-5`}
+                    >
                       <div className="flex items-center gap-4">
                         <div className="relative">
                           <img
@@ -271,7 +319,11 @@ const Chatmain = () => {
                         </div>
                       </div>
                     </li>
-                    <li className="flex items-center justify-between hover:bg-slate-700 rounded-md py-2 px-5">
+                    <li
+                      className={`${
+                        mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      } flex items-center justify-between rounded-md py-2 px-5`}
+                    >
                       <div className="flex items-center gap-4">
                         <div className="relative">
                           <img
@@ -290,7 +342,11 @@ const Chatmain = () => {
                         </div>
                       </div>
                     </li>
-                    <li className="flex items-center justify-between hover:bg-slate-700 rounded-md py-2 px-5">
+                    <li
+                      className={`${
+                        mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      } flex items-center justify-between rounded-md py-2 px-5`}
+                    >
                       <div className="flex items-center gap-4">
                         <div className="relative">
                           <img
@@ -309,7 +365,11 @@ const Chatmain = () => {
                         </div>
                       </div>
                     </li>
-                    <li className="flex items-center justify-between hover:bg-slate-700 rounded-md py-2 px-5">
+                    <li
+                      className={`${
+                        mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      } flex items-center justify-between rounded-md py-2 px-5`}
+                    >
                       <div className="flex items-center gap-4">
                         <div className="relative">
                           <img
@@ -328,7 +388,11 @@ const Chatmain = () => {
                         </div>
                       </div>
                     </li>
-                    <li className="flex items-center justify-between hover:bg-slate-700 rounded-md py-2 px-5">
+                    <li
+                      className={`${
+                        mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      } flex items-center justify-between rounded-md py-2 px-5`}
+                    >
                       <div className="flex items-center gap-4">
                         <div className="relative">
                           <img
@@ -347,7 +411,11 @@ const Chatmain = () => {
                         </div>
                       </div>
                     </li>
-                    <li className="flex items-center justify-between hover:bg-slate-700 rounded-md py-2 px-5">
+                    <li
+                      className={`${
+                        mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      } flex items-center justify-between rounded-md py-2 px-5`}
+                    >
                       <div className="flex items-center gap-4">
                         <div className="relative">
                           <img
@@ -366,7 +434,11 @@ const Chatmain = () => {
                         </div>
                       </div>
                     </li>
-                    <li className="flex items-center justify-between hover:bg-slate-700 rounded-md py-2 px-5">
+                    <li
+                      className={`${
+                        mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      } flex items-center justify-between rounded-md py-2 px-5`}
+                    >
                       <div className="flex items-center gap-4">
                         <div className="relative">
                           <img
@@ -385,7 +457,11 @@ const Chatmain = () => {
                         </div>
                       </div>
                     </li>
-                    <li className="flex items-center justify-between hover:bg-slate-700 rounded-md py-2 px-5">
+                    <li
+                      className={`${
+                        mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      } flex items-center justify-between rounded-md py-2 px-5`}
+                    >
                       <div className="flex items-center gap-4">
                         <div className="relative">
                           <img
@@ -404,7 +480,11 @@ const Chatmain = () => {
                         </div>
                       </div>
                     </li>
-                    <li className="flex items-center justify-between hover:bg-slate-700 rounded-md py-2 px-5">
+                    <li
+                      className={`${
+                        mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      } flex items-center justify-between rounded-md py-2 px-5`}
+                    >
                       <div className="flex items-center gap-4">
                         <div className="relative">
                           <img
@@ -423,7 +503,11 @@ const Chatmain = () => {
                         </div>
                       </div>
                     </li>
-                    <li className="flex items-center justify-between hover:bg-slate-700 rounded-md py-2 px-5">
+                    <li
+                      className={`${
+                        mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      } flex items-center justify-between rounded-md py-2 px-5`}
+                    >
                       <div className="flex items-center gap-4">
                         <div className="relative">
                           <img
@@ -442,45 +526,11 @@ const Chatmain = () => {
                         </div>
                       </div>
                     </li>
-                    <li className="flex items-center justify-between hover:bg-slate-700 rounded-md py-2 px-5">
-                      <div className="flex items-center gap-4">
-                        <div className="relative">
-                          <img
-                            src={profile}
-                            alt="profile/img"
-                            className="w-8 h-8 rounded-full"
-                          />
-                        </div>
-                        <div>
-                          <span className=" w-36 truncate font-bold">
-                            Charles Cooper
-                          </span>
-                          <p className="w-48 truncate">
-                            Fight account night night night
-                          </p>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="flex items-center justify-between hover:bg-slate-700 rounded-md py-2 px-5">
-                      <div className="flex items-center gap-4">
-                        <div className="relative">
-                          <img
-                            src={profile}
-                            alt="profile/img"
-                            className="w-8 h-8 rounded-full"
-                          />
-                        </div>
-                        <div>
-                          <span className=" w-36 truncate font-bold">
-                            Charles Cooper
-                          </span>
-                          <p className="w-48 truncate">
-                            Fight account night night night
-                          </p>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="flex items-center justify-between hover:bg-slate-700 rounded-md py-2 px-5">
+                    <li
+                      className={`${
+                        mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      } flex items-center justify-between rounded-md py-2 px-5`}
+                    >
                       <div className="flex items-center gap-4">
                         <div className="relative">
                           <img
@@ -529,7 +579,9 @@ const Chatmain = () => {
               <div className="flex items-end justify-between">
                 <ul className="overflow-y-scroll h-[64vh] w-full scroll-style ">
                   <div className="mx-5">
-                    <li className="flex items-center justify-between my-3 ml-5">
+                    <li
+                      className={` flex items-center justify-between my-3 ml-5`}
+                    >
                       <div className="flex items-start gap-4">
                         <div className="relative w-8 h-8">
                           <img
@@ -539,7 +591,11 @@ const Chatmain = () => {
                           />
                         </div>
                         <div>
-                          <p className="max-w-[45rem] bg-slate-700 rounded-tr-2xl rounded-bl-2xl py-2 px-5">
+                          <p
+                            className={`${
+                              mode ? "bg-slate-700" : "bg-slate-200"
+                            } max-w-[45rem] rounded-tr-2xl rounded-bl-2xl py-2 px-5`}
+                          >
                             Fight account night night night Lorem ipsum dolor
                             sit amet consectetur adipisicing elit. Nostrum eius
                             quae voluptates soluta necessitatibus officiis
@@ -564,8 +620,12 @@ const Chatmain = () => {
                           />
                         </div>
                         <div>
-                          <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
+                          <p
+                            className={`${
+                              mode ? "bg-slate-700" : "bg-slate-200"
+                            } max-w-[45rem] rounded-tl-2xl rounded-br-2xl py-2 px-5`}
+                          >
+                            orem ipsum dolor sit amet consectetur adipisicing
                             elit. Nisi dignissimos rerum veritatis quod quasi
                             necessitatibus illum, quisquam dolore nihil ipsa
                             aperiam delectus cumque porro illo optio nostrum
@@ -577,7 +637,111 @@ const Chatmain = () => {
                         </div>
                       </div>
                     </li>
-                    <li className="flex items-center justify-between ml-5 my-2">
+                    <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
+                      <div className="flex flex-row-reverse items-start gap-4">
+                        <div className="relative w-8 h-8">
+                          <img
+                            src={profile}
+                            alt="profile/img"
+                            className="w-8 h-8 rounded-full"
+                          />
+                        </div>
+                        <div>
+                          <p
+                            className={`${
+                              mode ? "bg-slate-700" : "bg-slate-200"
+                            } max-w-[45rem] rounded-tl-2xl rounded-br-2xl py-2 px-5`}
+                          >
+                            orem ipsum dolor sit amet consectetur adipisicing
+                            elit. Nisi dignissimos rerum veritatis quod quasi
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
+                      <div className="flex flex-row-reverse items-start gap-4">
+                        <div className="relative w-8 h-8">
+                          <img
+                            src={profile}
+                            alt="profile/img"
+                            className="w-8 h-8 rounded-full"
+                          />
+                        </div>
+                        <div>
+                          <p
+                            className={`${
+                              mode ? "bg-slate-700" : "bg-slate-200"
+                            } max-w-[45rem] rounded-tl-2xl rounded-br-2xl py-2 px-5`}
+                          >
+                            orem ipsum
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
+                      <div className="flex flex-row-reverse items-start gap-4">
+                        <div className="relative w-8 h-8">
+                          <img
+                            src={profile}
+                            alt="profile/img"
+                            className="w-8 h-8 rounded-full"
+                          />
+                        </div>
+                        <div>
+                          <p
+                            className={`${
+                              mode ? "bg-slate-700" : "bg-slate-200"
+                            } max-w-[45rem] rounded-tl-2xl rounded-br-2xl py-2 px-5`}
+                          >
+                            Lorem
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
+                      <div className="flex flex-row-reverse items-start gap-4">
+                        <div className="relative w-8 h-8">
+                          <img
+                            src={profile}
+                            alt="profile/img"
+                            className="w-8 h-8 rounded-full"
+                          />
+                        </div>
+                        <div>
+                          <p
+                            className={`${
+                              mode ? "bg-slate-700" : "bg-slate-200"
+                            } max-w-[45rem] rounded-tl-2xl rounded-br-2xl py-2 px-5`}
+                          >
+                            orem ipsum dolor sit amet consectetur adipisicing
+                            elit. Nisi dignissimos
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
+                      <div className="flex flex-row-reverse items-start gap-4">
+                        <div className="relative w-8 h-8">
+                          <img
+                            src={profile}
+                            alt="profile/img"
+                            className="w-8 h-8 rounded-full"
+                          />
+                        </div>
+                        <div>
+                          <p
+                            className={`${
+                              mode ? "bg-slate-700" : "bg-slate-200"
+                            } max-w-[45rem] rounded-tl-2xl rounded-br-2xl py-2 px-5`}
+                          >
+                            orem ipsum dolor
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      className={` flex items-center justify-between my-3 ml-5`}
+                    >
                       <div className="flex items-start gap-4">
                         <div className="relative w-8 h-8">
                           <img
@@ -587,13 +751,19 @@ const Chatmain = () => {
                           />
                         </div>
                         <div>
-                          <p className="max-w-[45rem] bg-slate-700 rounded-tr-2xl rounded-bl-2xl py-2 px-5">
-                            Hello
+                          <p
+                            className={`${
+                              mode ? "bg-slate-700" : "bg-slate-200"
+                            } max-w-[45rem] rounded-tr-2xl rounded-bl-2xl py-2 px-5`}
+                          >
+                            Hello!!!!!!!
                           </p>
                         </div>
                       </div>
                     </li>
-                    <li className="flex items-center justify-between  ml-5 my-2">
+                    <li
+                      className={` flex items-center justify-between my-3 ml-5`}
+                    >
                       <div className="flex items-start gap-4">
                         <div className="relative w-8 h-8">
                           <img
@@ -603,13 +773,19 @@ const Chatmain = () => {
                           />
                         </div>
                         <div>
-                          <p className="max-w-[45rem] bg-slate-700 rounded-tr-2xl rounded-bl-2xl py-2 px-5">
-                            Hello
+                          <p
+                            className={`${
+                              mode ? "bg-slate-700" : "bg-slate-200"
+                            } max-w-[45rem] rounded-tr-2xl rounded-bl-2xl py-2 px-5`}
+                          >
+                            Hello!!!!!!!
                           </p>
                         </div>
                       </div>
                     </li>
-                    <li className="flex items-center justify-between ml-5 my-2">
+                    <li
+                      className={` flex items-center justify-between my-3 ml-5`}
+                    >
                       <div className="flex items-start gap-4">
                         <div className="relative w-8 h-8">
                           <img
@@ -619,15 +795,19 @@ const Chatmain = () => {
                           />
                         </div>
                         <div>
-                          <p className="max-w-[45rem] bg-slate-700 rounded-tr-2xl rounded-bl-2xl py-2 px-5">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Veritatis enim, voluptatum rerum laudantium
-                            esse
+                          <p
+                            className={`${
+                              mode ? "bg-slate-700" : "bg-slate-200"
+                            } max-w-[45rem] rounded-tr-2xl rounded-bl-2xl py-2 px-5`}
+                          >
+                            Hello!!!!!!!
                           </p>
                         </div>
                       </div>
                     </li>
-                    <li className="flex items-center justify-between  ml-5 my-2">
+                    <li
+                      className={` flex items-center justify-between my-3 ml-5`}
+                    >
                       <div className="flex items-start gap-4">
                         <div className="relative w-8 h-8">
                           <img
@@ -637,168 +817,12 @@ const Chatmain = () => {
                           />
                         </div>
                         <div>
-                          <p className="max-w-[45rem] bg-slate-700 rounded-tr-2xl rounded-bl-2xl py-2 px-5">
-                            Hi there
-                          </p>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="flex items-center justify-between ml-5 my-2">
-                      <div className="flex items-start gap-4">
-                        <div className="relative w-8 h-8">
-                          <img
-                            src={profile}
-                            alt="profile/img"
-                            className="w-8 h-8 rounded-full"
-                          />
-                        </div>
-                        <div>
-                          <p className="max-w-[45rem] bg-slate-700 rounded-tr-2xl rounded-bl-2xl py-2 px-5">
-                            Hello
-                          </p>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
-                      <div className="flex flex-row-reverse items-start gap-4">
-                        <div className="relative w-8 h-8">
-                          <img
-                            src={profile}
-                            alt="profile/img"
-                            className="w-8 h-8 rounded-full"
-                          />
-                        </div>
-                        <div>
-                          <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
-                            Hi...
-                          </p>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
-                      <div className="flex flex-row-reverse items-start gap-4">
-                        <div className="relative w-8 h-8">
-                          <img
-                            src={profile}
-                            alt="profile/img"
-                            className="w-8 h-8 rounded-full"
-                          />
-                        </div>
-                        <div>
-                          <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
-                            Hi...
-                          </p>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
-                      <div className="flex flex-row-reverse items-start gap-4">
-                        <div className="relative w-8 h-8">
-                          <img
-                            src={profile}
-                            alt="profile/img"
-                            className="w-8 h-8 rounded-full"
-                          />
-                        </div>
-                        <div>
-                          <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
-                            Hi...
-                          </p>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
-                      <div className="flex flex-row-reverse items-start gap-4">
-                        <div className="relative w-8 h-8">
-                          <img
-                            src={profile}
-                            alt="profile/img"
-                            className="w-8 h-8 rounded-full"
-                          />
-                        </div>
-                        <div>
-                          <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
-                            Hi...
-                          </p>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
-                      <div className="flex flex-row-reverse items-start gap-4">
-                        <div className="relative w-8 h-8">
-                          <img
-                            src={profile}
-                            alt="profile/img"
-                            className="w-8 h-8 rounded-full"
-                          />
-                        </div>
-                        <div>
-                          <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
-                            Hi...
-                          </p>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
-                      <div className="flex flex-row-reverse items-start gap-4">
-                        <div className="relative w-8 h-8">
-                          <img
-                            src={profile}
-                            alt="profile/img"
-                            className="w-8 h-8 rounded-full"
-                          />
-                        </div>
-                        <div>
-                          <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
-                            Hi...
-                          </p>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
-                      <div className="flex flex-row-reverse items-start gap-4">
-                        <div className="relative w-8 h-8">
-                          <img
-                            src={profile}
-                            alt="profile/img"
-                            className="w-8 h-8 rounded-full"
-                          />
-                        </div>
-                        <div>
-                          <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
-                            Hi...
-                          </p>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
-                      <div className="flex flex-row-reverse items-start gap-4">
-                        <div className="relative w-8 h-8">
-                          <img
-                            src={profile}
-                            alt="profile/img"
-                            className="w-8 h-8 rounded-full"
-                          />
-                        </div>
-                        <div>
-                          <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
-                            Hi...
-                          </p>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
-                      <div className="flex flex-row-reverse items-start gap-4">
-                        <div className="relative w-8 h-8">
-                          <img
-                            src={profile}
-                            alt="profile/img"
-                            className="w-8 h-8 rounded-full"
-                          />
-                        </div>
-                        <div>
-                          <p className=" max-w-[45rem] bg-slate-700 rounded-tl-2xl rounded-br-2xl py-2 px-5">
-                            Hi...
+                          <p
+                            className={`${
+                              mode ? "bg-slate-700" : "bg-slate-200"
+                            } max-w-[45rem] rounded-tr-2xl rounded-bl-2xl py-2 px-5`}
+                          >
+                            Hello!!!!!!!
                           </p>
                         </div>
                       </div>
@@ -806,7 +830,11 @@ const Chatmain = () => {
                   </div>
                 </ul>
               </div>
-              <div className="flex items-center bg-slate-700 my-10 mx-5 h-14 border border-indigo-400 rounded-md">
+              <div
+                className={`${
+                  mode ? "bg-slate-700" : "bg-slate-200"
+                } flex items-center my-10 mx-5 h-14 border border-indigo-400 rounded-md`}
+              >
                 <input
                   type="text"
                   placeholder="Type your message..."
@@ -845,7 +873,9 @@ const Chatmain = () => {
                       />
                     </svg>
                   </div>
-                  <button className="bg-indigo-400 py-2 px-5 rounded-md">Send</button>
+                  <button className="bg-indigo-400 py-2 px-5 rounded-md">
+                    Send
+                  </button>
                 </div>
               </div>
             </div>

@@ -5,9 +5,21 @@ import { RxCardStackMinus, RxComponent1 } from "react-icons/rx";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { toggleDarkMode } from "../app/darkModeSlice";
+import { useState } from "react";
 
 const Sidebar = () => {
+  const [state, setState] = useState(false);
+  const [auth, setAuth] = useState(false);
   const mode = useSelector(toggleDarkMode);
+
+  const toggle = () => {
+    setState(!state);
+    console.log("Hello");
+  };
+  const authentition = () => {
+    setAuth(!auth);
+    console.log("Hello");
+  };
 
   return (
     <>
@@ -207,8 +219,9 @@ const Sidebar = () => {
                     </svg>
                   </li>
                 </NavLink>
-                <NavLink to="/">
+                <NavLink to="">
                   <li
+                    onClick={toggle}
                     className={`${
                       mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
                     } flex items-center justify-between w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
@@ -220,22 +233,98 @@ const Sidebar = () => {
 
                       <span>Pages</span>
                     </div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-4 h-4"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                      />
-                    </svg>
+                    {state ? (
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="w-4 h-4"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    ) : (
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="w-4 h-4"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                        />
+                      </svg>
+                    )}
                   </li>
                 </NavLink>
+                <div className={`${state ? "block" : "hidden"}`}>
+                  <ul className={`flex flex-col gap-4 py-3 ml-3`}>
+                    <li
+                      onClick={authentition}
+                      className="flex items-center gap-3 cursor-pointer"
+                    >
+                      <span className="w-2 h-2 bg-indigo-500"></span>
+                      <span>Authentication</span>
+                    </li>
+                    <ul
+                      className={`${
+                        auth ? "block" : "hidden"
+                      } flex flex-col gap-3 ml-6`}
+                    >
+                      <NavLink to="/pages/athentication/login" target="_blank">
+                        <li className=" cursor-pointer">Login</li>
+                      </NavLink>
+                      <NavLink
+                        to="/pages/athentication/register"
+                        target="_blank"
+                      >
+                        <li className=" cursor-pointer">Register</li>
+                      </NavLink>
+                      <li className=" cursor-pointer">Verify Email</li>
+                      <NavLink to="/pages/athentication/forgot" target="_blank">
+                        <li className=" cursor-pointer">Forgot Password</li>
+                      </NavLink>
+                      <NavLink to="/pages/athentication/reset" target="_blank">
+                        <li className=" cursor-pointer">Reset Password</li>
+                      </NavLink>
+                      <NavLink to="/pages/athentication/verify" target="_blank">
+
+                      <li className=" cursor-pointer">Two Steps</li>
+                      </NavLink>
+                    </ul>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 bg-indigo-500"></span>Help Center
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 bg-indigo-500"></span>User
+                      Profile
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 bg-indigo-500"></span>Account
+                      Setting
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 bg-indigo-500"></span>Account
+                      Pricing
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 bg-indigo-500"></span>FAQ
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <span className="w-2 h-2 bg-indigo-500"></span>
+                      Miscellaneous
+                    </li>
+                  </ul>
+                </div>
                 <NavLink to="/">
                   <li
                     className={`flex items-center gap-3 w-full h-10 pl-2 cursor-pointer  rounded hover:bg-blue-gray-100"
