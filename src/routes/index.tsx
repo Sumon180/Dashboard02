@@ -6,6 +6,7 @@ import Email from "../pages/Email";
 import ForgotPassword from "../pages/ForgotPassword";
 import LoginForm from "../pages/Login";
 import RegisterForm from "../pages/Register";
+import VerifyEmail from "../pages/VarifyEmail";
 
 const Dashboard = React.lazy(() => import("../pages/Dashboard"));
 
@@ -38,6 +39,10 @@ const router: RouteObject[] = [
   {
     path: "/pages/athentication/verify",
     element: <ForgotPassword />,
+  },
+  {
+    path: "/pages/athentication/verifyemail",
+    element: <VerifyEmail />,
   },
 ];
 

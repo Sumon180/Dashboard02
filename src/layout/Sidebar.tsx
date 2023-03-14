@@ -289,7 +289,12 @@ const Sidebar = () => {
                       >
                         <li className=" cursor-pointer">Register</li>
                       </NavLink>
-                      <li className=" cursor-pointer">Verify Email</li>
+                      <NavLink
+                        to="/pages/athentication/verifyemail"
+                        target="_blank"
+                      >
+                        <li className="cursor-pointer">Verify Email</li>
+                      </NavLink>
                       <NavLink to="/pages/athentication/forgot" target="_blank">
                         <li className=" cursor-pointer">Forgot Password</li>
                       </NavLink>
@@ -297,8 +302,7 @@ const Sidebar = () => {
                         <li className=" cursor-pointer">Reset Password</li>
                       </NavLink>
                       <NavLink to="/pages/athentication/verify" target="_blank">
-
-                      <li className=" cursor-pointer">Two Steps</li>
+                        <li className=" cursor-pointer">Two Steps</li>
                       </NavLink>
                     </ul>
                     <li className="flex items-center gap-3">
