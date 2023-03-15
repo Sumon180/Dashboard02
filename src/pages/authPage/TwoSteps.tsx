@@ -1,5 +1,5 @@
-import img from "../assets/image/twoSteps.png";
-import logo from "../assets/image/react.svg";
+import img from "../../assets/image/twoSteps.png";
+import logo from "../../assets/image/react.svg";
 
 const TwoSteps = () => {
   return (

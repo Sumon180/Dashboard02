@@ -3,10 +3,12 @@ import { RouteObject } from "react-router-dom";
 import ErrorPage from "../layout/ErrorPage";
 import Chat from "../pages/Chat";
 import Email from "../pages/Email";
-import ForgotPassword from "../pages/ForgotPassword";
-import LoginForm from "../pages/Login";
-import RegisterForm from "../pages/Register";
-import VerifyEmail from "../pages/VarifyEmail";
+import ForgotPassword from "../pages/authPage/ForgotPassword";
+import LoginForm from "../pages/authPage/Login";
+import RegisterForm from "../pages/authPage/Register";
+import VerifyEmail from "../pages/authPage/VarifyEmail";
+import List from "../pages/invoice/List";
+import UserList from "../pages/user/UserList";
 
 const Dashboard = React.lazy(() => import("../pages/Dashboard"));
 
@@ -23,6 +25,14 @@ const router: RouteObject[] = [
   {
     path: "chat",
     element: <Chat />,
+  },
+  {
+    path: "/invoice/list",
+    element: <List />,
+  },
+  {
+    path: "/user/list",
+    element: <UserList />,
   },
   {
     path: "/pages/athentication/login",

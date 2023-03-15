@@ -10,6 +10,8 @@ import { useState } from "react";
 const Sidebar = () => {
   const [state, setState] = useState(false);
   const [auth, setAuth] = useState(false);
+  const [invoice, setInvoce] = useState(false);
+  const [user, setUser] = useState(false);
   const mode = useSelector(toggleDarkMode);
 
   const toggle = () => {
@@ -18,6 +20,14 @@ const Sidebar = () => {
   };
   const authentition = () => {
     setAuth(!auth);
+    console.log("Hello");
+  };
+  const invoices = () => {
+    setInvoce(!invoice);
+    console.log("Hello");
+  };
+  const users = () => {
+    setUser(!user);
     console.log("Hello");
   };
 
@@ -148,8 +158,9 @@ const Sidebar = () => {
                     <span>Calender</span>
                   </li>
                 </NavLink>
-                <NavLink to="/">
+                <NavLink to="">
                   <li
+                    onClick={invoices}
                     className={`${
                       mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
                     } flex items-center justify-between w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
@@ -158,34 +169,72 @@ const Sidebar = () => {
                   >
                     <div className="flex items-center gap-3">
                       <TbFileInvoice className="w-6 h-6" />
-
                       <span>Invoice</span>
                     </div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-4 h-4"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                      />
-                    </svg>
+                    <div>
+                      {invoice ? (
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="currentColor"
+                          className="w-4 h-4"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                          />
+                        </svg>
+                      ) : (
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="currentColor"
+                          className="w-4 h-4"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                          />
+                        </svg>
+                      )}
+                    </div>
                   </li>
                 </NavLink>
-                <NavLink to="/">
-                  <li
-                    className={`${
-                      mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
-                    } flex items-center justify-between w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
-                        
+                <ul
+                  className={`${
+                    invoice ? "block" : "hidden"
+                  } flex flex-col gap-4 py-3 ml-3`}
+                >
+                  <NavLink to="/invoice/list">
+                    <li className="flex items-center gap-3 cursor-pointer">
+                      <span className="w-2 h-2 bg-indigo-500"></span> List
+                    </li>
+                  </NavLink>
+                  <li className="flex items-center gap-3 cursor-pointer">
+                    <span className="w-2 h-2 bg-indigo-500"></span>Preview
+                  </li>
+                  <li className="flex items-center gap-3 cursor-pointer">
+                    <span className="w-2 h-2 bg-indigo-500"></span>Edit
+                  </li>
+                  <li className="flex items-center gap-3 cursor-pointer">
+                    <span className="w-2 h-2 bg-indigo-500"></span>Add
+                  </li>
+                </ul>
+                <li
+                  onClick={users}
+                  className={`${
+                    mode ? "hover:bg-slate-800" : "hover:bg-slate-200"
+                  } flex items-center justify-between w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"                  
                     `}
-                  >
-                    <div className="flex items-center gap-3">
+                >
+                  <div className="flex items-center gap-3">
+                    {
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -200,9 +249,26 @@ const Sidebar = () => {
                           d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
                         />
                       </svg>
+                    }
 
-                      <span>User</span>
-                    </div>
+                    <span>User</span>
+                  </div>
+                  {user ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-4 h-4"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
+                  ) : (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -217,8 +283,22 @@ const Sidebar = () => {
                         d="M8.25 4.5l7.5 7.5-7.5 7.5"
                       />
                     </svg>
+                  )}
+                </li>
+                <ul
+                  className={`${
+                    user ? "block" : "hidden"
+                  } flex flex-col gap-4 py-3 ml-3`}
+                >
+                  <NavLink to="/user/list">
+                    <li className="flex items-center gap-3 cursor-pointer">
+                      <span className="w-2 h-2 bg-indigo-500"></span> List
+                    </li>
+                  </NavLink>
+                  <li className="flex items-center gap-3 cursor-pointer">
+                    <span className="w-2 h-2 bg-indigo-500"></span>View
                   </li>
-                </NavLink>
+                </ul>
                 <NavLink to="">
                   <li
                     onClick={toggle}

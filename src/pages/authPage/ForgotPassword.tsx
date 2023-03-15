@@ -1,6 +1,6 @@
 import { BsChevronLeft } from "react-icons/bs";
-import img from "../assets/image/forgot.png";
-import logo from "../assets/image/react.svg";
+import img from "../../assets/image/forgot.png";
+import logo from "../../assets/image/react.svg";
 
 const ForgotPassword = () => {
   return (

@@ -1,5 +1,5 @@
-import img from "../assets/image/reset.png";
-import logo from "../assets/image/react.svg";
+import img from "../../assets/image/reset.png";
+import logo from "../../assets/image/react.svg";
 
 // flex items-center justify-center h-screen w-screen  bg-[#f8f7fa]
 

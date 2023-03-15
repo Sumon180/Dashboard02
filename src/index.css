@@ -25,6 +25,23 @@
     @apply bg-slate-800;
   }
   .scroll-style::-webkit-scrollbar-thumb {
-    @apply rounded-full bg-blue-200 ;
+    @apply rounded-full bg-blue-200;
   }
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(30 41 59);
 }
