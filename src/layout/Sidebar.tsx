@@ -295,9 +295,11 @@ const Sidebar = () => {
                       <span className="w-2 h-2 bg-indigo-500"></span> List
                     </li>
                   </NavLink>
-                  <li className="flex items-center gap-3 cursor-pointer">
-                    <span className="w-2 h-2 bg-indigo-500"></span>View
-                  </li>
+                  <NavLink to="/user/view">
+                    <li className="flex items-center gap-3 cursor-pointer">
+                      <span className="w-2 h-2 bg-indigo-500"></span>View
+                    </li>
+                  </NavLink>
                 </ul>
                 <NavLink to="">
                   <li

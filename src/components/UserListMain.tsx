@@ -32,7 +32,7 @@ const UserListMain = () => {
                 <div>
                   <p>Session</p>
                   <p className="text-2xl">
-                    21,459 <span className="text-lg">29%</span>
+                    21,459 <span className="text-lg text-green-400">(29%)</span>
                   </p>
                   <p>Total Users</p>
                 </div>
@@ -65,9 +65,9 @@ const UserListMain = () => {
                 <div>
                   <p>Paid Users</p>
                   <p className="text-2xl">
-                    21,459 <span className="text-lg">29%</span>
+                    21,459 <span className="text-lg text-green-400">(29%)</span>
                   </p>
-                  <p>Total Users</p>
+                  <p>Last week analytics</p>
                 </div>
                 <div>
                   <svg
@@ -98,9 +98,9 @@ const UserListMain = () => {
                 <div>
                   <p>Active Users</p>
                   <p className="text-2xl">
-                    21,459 <span className="text-lg">29%</span>
+                    21,459 <span className="text-lg text-green-400">(29%)</span>
                   </p>
-                  <p>Total Users</p>
+                  <p>Last week analytics</p>
                 </div>
                 <div>
                   <svg
@@ -131,9 +131,9 @@ const UserListMain = () => {
                 <div>
                   <p>Pending Users</p>
                   <p className="text-2xl">
-                    21,459 <span className="text-lg">29%</span>
+                    459 <span className="text-lg text-green-400">(29%)</span>
                   </p>
-                  <p>Total Users</p>
+                  <p>Last week analytics</p>
                 </div>
                 <div>
                   <svg

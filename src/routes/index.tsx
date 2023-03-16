@@ -9,6 +9,7 @@ import RegisterForm from "../pages/authPage/Register";
 import VerifyEmail from "../pages/authPage/VarifyEmail";
 import List from "../pages/invoice/List";
 import UserList from "../pages/user/UserList";
+import View from "../pages/user/View";
 
 const Dashboard = React.lazy(() => import("../pages/Dashboard"));
 
@@ -33,6 +34,10 @@ const router: RouteObject[] = [
   {
     path: "/user/list",
     element: <UserList />,
+  },
+  {
+    path: "/user/view",
+    element: <View />,
   },
   {
     path: "/pages/athentication/login",
