@@ -10,6 +10,7 @@ import VerifyEmail from "../pages/authPage/VarifyEmail";
 import List from "../pages/invoice/List";
 import UserList from "../pages/user/UserList";
 import View from "../pages/user/View";
+import Preview from "../pages/invoice/Preview";
 
 const Dashboard = React.lazy(() => import("../pages/Dashboard"));
 
@@ -30,6 +31,10 @@ const router: RouteObject[] = [
   {
     path: "/invoice/list",
     element: <List />,
+  },
+  {
+    path: "/invoice/preview",
+    element: <Preview />,
   },
   {
     path: "/user/list",
