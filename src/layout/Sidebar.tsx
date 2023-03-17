@@ -221,12 +221,16 @@ const Sidebar = () => {
                       <span className="w-2 h-2 bg-indigo-500"></span>Preview
                     </li>
                   </NavLink>
-                  <li className="flex items-center gap-3 cursor-pointer">
-                    <span className="w-2 h-2 bg-indigo-500"></span>Edit
-                  </li>
-                  <li className="flex items-center gap-3 cursor-pointer">
-                    <span className="w-2 h-2 bg-indigo-500"></span>Add
-                  </li>
+                  <NavLink to="/invoice/edit">
+                    <li className="flex items-center gap-3 cursor-pointer">
+                      <span className="w-2 h-2 bg-indigo-500"></span>Edit
+                    </li>
+                  </NavLink>
+                  <NavLink to="/invoice/add">
+                    <li className="flex items-center gap-3 cursor-pointer">
+                      <span className="w-2 h-2 bg-indigo-500"></span>Add
+                    </li>
+                  </NavLink>
                 </ul>
                 <li
                   onClick={users}

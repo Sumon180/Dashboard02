@@ -11,6 +11,8 @@ import List from "../pages/invoice/List";
 import UserList from "../pages/user/UserList";
 import View from "../pages/user/View";
 import Preview from "../pages/invoice/Preview";
+import Edit from "../pages/invoice/Edit";
+import Add from "../pages/invoice/Add";
 
 const Dashboard = React.lazy(() => import("../pages/Dashboard"));
 
@@ -35,6 +37,14 @@ const router: RouteObject[] = [
   {
     path: "/invoice/preview",
     element: <Preview />,
+  },
+  {
+    path: "/invoice/edit",
+    element: <Edit />,
+  },
+  {
+    path: "/invoice/add",
+    element: <Add />,
   },
   {
     path: "/user/list",
