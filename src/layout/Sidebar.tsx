@@ -38,7 +38,7 @@ const Sidebar = () => {
   return (
     <>
       <div
-        className={`fixed  w-60 lg:block transition-all duration-300 h-screen border-r border-gray-400 ${
+        className={`fixed  lg:w-60 lg:block transition-all duration-300 h-screen border-r border-gray-400 ${
           mode ? "bg-[#141B2D] text-slate-300" : "bg-white text-slate-800"
         } ${nav ? "block z-50 w-72" : "hidden"}`}
       >
