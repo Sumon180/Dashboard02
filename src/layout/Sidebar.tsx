@@ -6,6 +6,7 @@ import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { toggleDarkMode } from "../app/darkModeSlice";
 import { useState } from "react";
+import Setting from "./Setting";
 
 const Sidebar = () => {
   const [state, setState] = useState(false);
@@ -38,6 +39,7 @@ const Sidebar = () => {
           mode ? "bg-[#141B2D] text-slate-300" : "bg-white text-slate-800"
         }`}
       >
+        <Setting />
         <div className={`${mode ? "" : "bg-white text-slate-800"}`}>
           <div className="">
             <h1 className="text-3xl my-3 px-3">Vuexy</h1>
