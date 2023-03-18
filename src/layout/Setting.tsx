@@ -1,7 +1,18 @@
+import { useState } from "react";
+
 const Setting = () => {
+  const [setting, setSetting] = useState(false);
+
+  const toggle = () => {
+    setSetting(!setting);
+  };
+
   return (
     <>
-      <div className="fixed flex items-center justify-start pl-2 right-0 top-1/2 bg-indigo-400 w-10 h-9">
+      <div
+        onClick={toggle}
+        className="fixed flex items-center justify-start cursor-pointer pl-2 right-0 top-1/2 bg-indigo-400 w-10 h-9"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -21,6 +32,29 @@ const Setting = () => {
             d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
           />
         </svg>
+      </div>
+
+      <div
+        className={`fixed top-0 right-0 bottom-0 cursor-pointer transition-all duration-300 ease-in-out w-96 bg-red-400 z-10 ${
+          setting ? "block" : "hidden"
+        }`}
+      >
+        <div onClick={toggle} className="bg-black py-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
       </div>
     </>
   );

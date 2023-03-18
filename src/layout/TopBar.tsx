@@ -1,6 +1,7 @@
 import profile from "../assets/image/profile.jpg";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleDarkMode, toggleMode } from "../app/darkModeSlice";
+import { navToggle, toggleDarkMode, toggleMode } from "../app/darkModeSlice";
+import Setting from "./Setting";
 
 const TopBar = () => {
   const mode = useSelector(toggleDarkMode);
@@ -18,7 +19,11 @@ const TopBar = () => {
             mode ? "bg-[#141B2D] text-slate-300" : "bg-white text-slate-800"
           }`}
         >
-          <div className="flex items-center gap-3">
+          <Setting />
+          <div
+            onClick={() => dispatch(navToggle())}
+            className="flex items-center gap-3"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

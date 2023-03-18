@@ -3,7 +3,7 @@ import darkModeSlice from "./darkModeSlice";
 
 export const Store = configureStore({
   reducer: {
-    darkMode: darkModeSlice,
+    toggle: darkModeSlice,
   },
 });
 

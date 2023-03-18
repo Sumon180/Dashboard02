@@ -3,8 +3,8 @@ import { TbFileInvoice, TbTypography } from "react-icons/tb";
 import { MdOutlineContactPage } from "react-icons/md";
 import { RxCardStackMinus, RxComponent1 } from "react-icons/rx";
 import { NavLink } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { toggleDarkMode } from "../app/darkModeSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { navToggle, toggleDarkMode, toggleNav } from "../app/darkModeSlice";
 import { useState } from "react";
 import Setting from "./Setting";
 
@@ -14,6 +14,9 @@ const Sidebar = () => {
   const [invoice, setInvoce] = useState(false);
   const [user, setUser] = useState(false);
   const mode = useSelector(toggleDarkMode);
+  const nav = useSelector(toggleNav);
+
+  const dispatch = useDispatch();
 
   const toggle = () => {
     setState(!state);
@@ -35,14 +38,35 @@ const Sidebar = () => {
   return (
     <>
       <div
-        className={`fixed  w-60 lg:block hidden transition-all duration-300 h-screen border-r border-gray-400 ${
+        className={`fixed  w-60 lg:block transition-all duration-300 h-screen border-r border-gray-400 ${
           mode ? "bg-[#141B2D] text-slate-300" : "bg-white text-slate-800"
-        }`}
+        } ${nav ? "block z-50 w-72" : "hidden"}`}
       >
         <Setting />
         <div className={`${mode ? "" : "bg-white text-slate-800"}`}>
           <div className="">
-            <h1 className="text-3xl my-3 px-3">Vuexy</h1>
+            <div className="flex items-center justify-between px-3">
+              <h1 className="text-3xl my-3">Vuexy</h1>
+              <div
+                onClick={() => dispatch(navToggle())}
+                className=" cursor-pointer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </div>
+            </div>
             <div className="px-3 overflow-y-scroll h-[93vh] scroll-style">
               <ul className={`flex flex-col gap-2 z-50 `}>
                 <NavLink to="/">
