@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import darkModeSlice from "./darkModeSlice";
+import toggleSlice from "./toggleSlice";
 
 export const Store = configureStore({
   reducer: {
-    toggle: darkModeSlice,
+    darkMode: darkModeSlice,
+    toggle: toggleSlice,
   },
 });
 

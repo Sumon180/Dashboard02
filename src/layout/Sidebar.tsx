@@ -4,9 +4,10 @@ import { MdOutlineContactPage } from "react-icons/md";
 import { RxCardStackMinus, RxComponent1 } from "react-icons/rx";
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { navToggle, toggleDarkMode, toggleNav } from "../app/darkModeSlice";
+import { toggleDarkMode } from "../app/darkModeSlice";
 import { useState } from "react";
 import Setting from "./Setting";
+import { toggleHandle, toggleState } from "../app/toggleSlice";
 
 const Sidebar = () => {
   const [state, setState] = useState(false);
@@ -14,7 +15,7 @@ const Sidebar = () => {
   const [invoice, setInvoce] = useState(false);
   const [user, setUser] = useState(false);
   const mode = useSelector(toggleDarkMode);
-  const nav = useSelector(toggleNav);
+  const nav = useSelector(toggleState);
 
   const dispatch = useDispatch();
 
@@ -48,7 +49,7 @@ const Sidebar = () => {
             <div className="flex items-center justify-between px-3">
               <h1 className="text-3xl my-3">Vuexy</h1>
               <div
-                onClick={() => dispatch(navToggle())}
+                onClick={() => dispatch(toggleHandle())}
                 className=" cursor-pointer"
               >
                 <svg

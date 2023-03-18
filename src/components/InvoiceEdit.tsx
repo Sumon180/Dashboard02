@@ -1,9 +1,5 @@
-import profile from "../assets/image/profile.jpg";
-import react from "../assets/image/react.png";
-import vieu from "../assets/image/view.png";
 import { useSelector } from "react-redux";
 import { toggleDarkMode } from "../app/darkModeSlice";
-import { BsThreeDotsVertical } from "react-icons/bs";
 
 const InvoiceEdit = () => {
   const mode = useSelector(toggleDarkMode);
@@ -18,8 +14,8 @@ const InvoiceEdit = () => {
         <div className={` pt-10 pb-6`}>
           <div className={`flex flex-col mx-5`}>
             <div className="w-full">
-              <div className="flex gap-5">
-                <div className="w-[30%]">
+              <div className="lg:flex lg:flex-row flex flex-col gap-5">
+                <div className="lg:w-[30%] w-full">
                   <div
                     className={`rounded-lg ${
                       mode

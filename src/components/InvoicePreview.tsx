@@ -18,8 +18,8 @@ const InvoicePreview = () => {
         <div className={` pt-10 pb-6`}>
           <div className={`flex flex-col mx-5`}>
             <div className="w-full">
-              <div className="flex gap-5">
-                <div className="w-[30%]">
+              <div className="lg:flex lg:flex-row flex flex-col gap-5">
+                <div className="lg:w-[30%] w-full">
                   <div
                     className={`rounded-lg ${
                       mode
