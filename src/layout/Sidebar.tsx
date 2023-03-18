@@ -47,10 +47,10 @@ const Sidebar = () => {
         <div className={`${mode ? "" : "bg-white text-slate-800"}`}>
           <div className="">
             <div className="flex items-center justify-between px-3">
-              <h1 className="text-3xl my-3">Vuexy</h1>
+              <h1 className="text-3xl my-3">Dashboard</h1>
               <div
                 onClick={() => dispatch(toggleHandle())}
-                className=" cursor-pointer"
+                className=" cursor-pointer lg:hidden"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

@@ -58,8 +58,8 @@ const ListMain = () => {
                 </div>
               </div>
               <div className="overflow-y-scroll h-[85vh] scroll-style">
-                <table className="w-full">
-                  <thead className=" select-none">
+                <table>
+                  <thead className="select-none">
                     <tr>
                       <th>#ID</th>
                       <th>
