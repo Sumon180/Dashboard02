@@ -35,7 +35,7 @@ const Setting = () => {
       </div>
 
       <div
-        className={`fixed top-0 right-0 bottom-0 cursor-pointer transition-all duration-300 ease-in-out w-96 bg-red-400 z-10 ${
+        className={`fixed top-0 right-0 bottom-0 cursor-pointer transition-all duration-300 ease-in-out w-96 bg-red-400 z-50 ${
           setting ? "block" : "hidden"
         }`}
       >

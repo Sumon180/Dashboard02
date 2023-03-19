@@ -15,12 +15,14 @@ const TopBar = () => {
           mode ? "bg-[#141B2D] text-slate-300" : "bg-[#F8F7FA] text-slate-800"
         }`}
       >
+        <Setting />
         <div
-          className={`flex items-center justify-between z-50 rounded-md border px-7 py-2 w-full ${
-            mode ? "bg-slate-800 text-slate-300" : "bg-slate-200 text-slate-800"
+          className={`flex items-center justify-between z-40 rounded-md px-7 py-2 w-full ${
+            mode
+              ? "bg-slate-800 text-slate-300"
+              : "bg-slate-200 drop-shadow-lg hover:drop-shadow-none transition-all duration-300 text-slate-800"
           }`}
         >
-          <Setting />
           <div
             onClick={() => dispatch(toggleHandle())}
             className="flex items-center gap-3"

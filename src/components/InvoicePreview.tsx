@@ -15,9 +15,9 @@ const InvoicePreview = () => {
           <div className={`flex flex-col mx-5`}>
             <div className="w-full">
               <div className="lg:flex lg:flex-row flex flex-col gap-5">
-                <div className="lg:w-[30%] w-full">
+                <div className="lg:w-[30%]">
                   <div
-                    className={`rounded-lg ${
+                    className={`rounded-lg drop-shadow-lg hover:drop-shadow-none transition-all duration-300 ${
                       mode
                         ? "bg-slate-800 text-slate-300"
                         : "bg-slate-200 text-slate-800"
@@ -48,7 +48,7 @@ const InvoicePreview = () => {
 
                 <div className="w-full">
                   <div
-                    className={`py-5 rounded-lg ${
+                    className={`py-5 rounded-lg drop-shadow-lg hover:drop-shadow-none transition-all duration-300 ${
                       mode
                         ? "bg-slate-800 text-slate-300"
                         : "bg-slate-200 text-slate-800"

@@ -68,12 +68,15 @@ const Sidebar = () => {
                 </svg>
               </div>
             </div>
-            <div className="px-3 overflow-y-scroll h-[93vh] scroll-style" style={{ }}>
+            <div
+              className="px-3 overflow-y-scroll h-[93vh] scroll-style"
+              style={{}}
+            >
               <ul className={`flex flex-col gap-2 z-50 `}>
                 <NavLink to="/">
                   <li
                     className={`${
-                      mode ? "bg-slate-700" : "bg-slate-200"
+                      mode ? "bg-slate-700" : "bg-slate-300"
                     } flex items-center justify-between w-full h-10 pl-2 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
@@ -123,7 +126,7 @@ const Sidebar = () => {
                 <NavLink to="/email">
                   <li
                     className={`${
-                      mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      mode ? "hover:bg-slate-700" : "hover:bg-slate-300"
                     } flex items-center gap-3 w-full h-10 pl-2 hover:bg-slate-200  cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
@@ -136,7 +139,7 @@ const Sidebar = () => {
                 <NavLink to="/chat">
                   <li
                     className={`${
-                      mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      mode ? "hover:bg-slate-700" : "hover:bg-slate-300"
                     } flex items-center gap-3 w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
@@ -162,7 +165,7 @@ const Sidebar = () => {
                 <NavLink to="/">
                   <li
                     className={`${
-                      mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      mode ? "hover:bg-slate-700" : "hover:bg-slate-300"
                     } flex items-center gap-3 w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
@@ -189,7 +192,7 @@ const Sidebar = () => {
                   <li
                     onClick={invoices}
                     className={`${
-                      mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      mode ? "hover:bg-slate-700" : "hover:bg-slate-300"
                     } flex items-center justify-between w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
@@ -262,7 +265,7 @@ const Sidebar = () => {
                 <li
                   onClick={users}
                   className={`${
-                    mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                    mode ? "hover:bg-slate-700" : "hover:bg-slate-300"
                   } flex items-center justify-between w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"                  
                     `}
                 >
@@ -338,7 +341,7 @@ const Sidebar = () => {
                   <li
                     onClick={toggle}
                     className={`${
-                      mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      mode ? "hover:bg-slate-700" : "hover:bg-slate-300"
                     } flex items-center justify-between w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
@@ -456,7 +459,7 @@ const Sidebar = () => {
                 <NavLink to="/">
                   <li
                     className={`${
-                      mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      mode ? "hover:bg-slate-700" : "hover:bg-slate-300"
                     } flex items-center gap-3 w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
@@ -469,7 +472,7 @@ const Sidebar = () => {
                 <NavLink to="/">
                   <li
                     className={`${
-                      mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      mode ? "hover:bg-slate-700" : "hover:bg-slate-300"
                     } flex items-center gap-3 w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
@@ -499,7 +502,7 @@ const Sidebar = () => {
                 <NavLink to="/">
                   <li
                     className={`${
-                      mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      mode ? "hover:bg-slate-700" : "hover:bg-slate-300"
                     } flex items-center justify-between w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
@@ -528,7 +531,7 @@ const Sidebar = () => {
                 <NavLink to="/">
                   <li
                     className={`${
-                      mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      mode ? "hover:bg-slate-700" : "hover:bg-slate-300"
                     } flex items-center justify-between gap-3 w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
@@ -566,7 +569,7 @@ const Sidebar = () => {
                 <NavLink to="/">
                   <li
                     className={`${
-                      mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      mode ? "hover:bg-slate-700" : "hover:bg-slate-300"
                     } flex items-center justify-between w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
@@ -607,7 +610,7 @@ const Sidebar = () => {
                 <NavLink to="/">
                   <li
                     className={`${
-                      mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      mode ? "hover:bg-slate-700" : "hover:bg-slate-300"
                     } flex items-center gap-3 w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
@@ -633,7 +636,7 @@ const Sidebar = () => {
                 <NavLink to="/">
                   <li
                     className={`${
-                      mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      mode ? "hover:bg-slate-700" : "hover:bg-slate-300"
                     } flex items-center gap-3 w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
@@ -668,7 +671,7 @@ const Sidebar = () => {
                 <NavLink to="/">
                   <li
                     className={`${
-                      mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      mode ? "hover:bg-slate-700" : "hover:bg-slate-300"
                     } flex items-center justify-between w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
@@ -719,7 +722,7 @@ const Sidebar = () => {
                 <NavLink to="/">
                   <li
                     className={`${
-                      mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      mode ? "hover:bg-slate-700" : "hover:bg-slate-300"
                     } flex items-center gap-3 w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
@@ -744,7 +747,7 @@ const Sidebar = () => {
                 <NavLink to="/">
                   <li
                     className={`${
-                      mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      mode ? "hover:bg-slate-700" : "hover:bg-slate-300"
                     } flex items-center justify-between w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
@@ -785,7 +788,7 @@ const Sidebar = () => {
                 <NavLink to="/">
                   <li
                     className={`${
-                      mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      mode ? "hover:bg-slate-700" : "hover:bg-slate-300"
                     } flex items-center gap-3 w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
@@ -810,7 +813,7 @@ const Sidebar = () => {
                 <NavLink to="/">
                   <li
                     className={`${
-                      mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      mode ? "hover:bg-slate-700" : "hover:bg-slate-300"
                     } flex items-center gap-3 w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
@@ -835,7 +838,7 @@ const Sidebar = () => {
                 <NavLink to="/">
                   <li
                     className={`${
-                      mode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+                      mode ? "hover:bg-slate-700" : "hover:bg-slate-300"
                     } flex items-center gap-3 w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}

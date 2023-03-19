@@ -11,11 +11,15 @@ const EmailMain = () => {
     <>
       <div
         className={`mt-14 ${
-          mode ? "bg-[#141B2D] text-slate-300" : "bg-white text-slate-800"
+          mode ? "bg-[#141B2D] text-slate-300" : "bg-[#F8F7FA] text-slate-800"
         }`}
       >
         <div className="pt-10 pb-6">
-          <div className="flex rounded-md mx-5 bg-slate-800">
+          <div
+            className={`flex rounded-md mx-5  ${
+              mode ? "bg-slate-800" : "bg-slate-200"
+            }`}
+          >
             <div className="w-56 border-r">
               <div className="px-5 pt-5">
                 <button
