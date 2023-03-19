@@ -4,7 +4,7 @@ import { toggleDarkMode } from "../app/darkModeSlice";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { useState } from "react";
 
-const ListMain = () => {
+const InvoiceListMain = () => {
   const mode = useSelector(toggleDarkMode);
   const [pop, setPop] = useState(false);
 
@@ -20,7 +20,7 @@ const ListMain = () => {
         }`}
       >
         <div className="pt-10 pb-6">
-          <div className="flex border rounded-md mx-5">
+          <div className="flex rounded-md mx-5 bg-slate-800">
             <div className="w-full">
               <div className="flex items-center justify-between border-b py-3 px-5 w-full gap-3">
                 <div className="flex items-center">
@@ -200,4 +200,4 @@ const ListMain = () => {
   );
 };
 
-export default ListMain;
+export default InvoiceListMain;

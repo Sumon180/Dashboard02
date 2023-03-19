@@ -12,12 +12,12 @@ const TopBar = () => {
     <>
       <div
         className={`fixed right-0 lg:left-60 left-0 flex items-center justify-between z-40 px-5 py-2 ${
-          mode ? "bg-[#141B2D] text-slate-300" : "bg-white text-slate-800"
+          mode ? "bg-[#141B2D] text-slate-300" : "bg-[#F8F7FA] text-slate-800"
         }`}
       >
         <div
           className={`flex items-center justify-between z-50 rounded-md border px-7 py-2 w-full ${
-            mode ? "bg-[#141B2D] text-slate-300" : "bg-white text-slate-800"
+            mode ? "bg-slate-800 text-slate-300" : "bg-slate-200 text-slate-800"
           }`}
         >
           <Setting />

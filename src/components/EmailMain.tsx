@@ -15,7 +15,7 @@ const EmailMain = () => {
         }`}
       >
         <div className="pt-10 pb-6">
-          <div className="flex border rounded-md mx-5">
+          <div className="flex rounded-md mx-5 bg-slate-800">
             <div className="w-56 border-r">
               <div className="px-5 pt-5">
                 <button

@@ -13,7 +13,7 @@ const Chatmain = () => {
         }`}
       >
         <div className="pt-10 pb-10">
-          <div className="flex border rounded-md mx-5">
+          <div className="flex rounded-md mx-5 bg-slate-800">
             <div className="w-[30rem] border-r">
               <div className="flex flex-col w-full">
                 <div className="flex items-center gap-3 border-b w-full px-5 py-5">

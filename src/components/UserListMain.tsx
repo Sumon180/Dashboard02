@@ -154,7 +154,7 @@ const UserListMain = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col border rounded-md mx-5">
+          <div className="flex flex-col rounded-md mx-5 bg-slate-800">
             <div className="">
               <h2 className="mx-5 text-2xl pt-4">Search Filter</h2>
               <div className="flex items-center justify-between border-b px-5 py-4">

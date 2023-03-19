@@ -1,9 +1,5 @@
-import profile from "../assets/image/profile.jpg";
-import react from "../assets/image/react.png";
-import vieu from "../assets/image/view.png";
 import { useSelector } from "react-redux";
 import { toggleDarkMode } from "../app/darkModeSlice";
-import { BsThreeDotsVertical } from "react-icons/bs";
 
 const InvoicePreview = () => {
   const mode = useSelector(toggleDarkMode);
