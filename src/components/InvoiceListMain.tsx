@@ -21,7 +21,7 @@ const InvoiceListMain = () => {
       >
         <div className="pt-10 pb-6">
           <div
-            className={`flex rounded-md mx-5 ${
+            className={`flex rounded-xl mx-5 ${
               mode ? "bg-slate-800" : "bg-slate-200"
             }`}
           >

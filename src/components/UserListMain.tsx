@@ -155,7 +155,7 @@ const UserListMain = () => {
             </div>
           </div>
           <div
-            className={`flex flex-col rounded-md mx-5  ${
+            className={`flex flex-col rounded-xl mx-5  ${
               mode ? "bg-slate-800" : "bg-slate-200"
             }`}
           >

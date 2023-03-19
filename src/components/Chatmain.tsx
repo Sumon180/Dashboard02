@@ -14,7 +14,7 @@ const Chatmain = () => {
       >
         <div className="pt-10 pb-10">
           <div
-            className={`flex rounded-md mx-5 ${
+            className={`flex rounded-xl mx-5 ${
               mode ? "bg-slate-800" : "bg-slate-200"
             }`}
           >
@@ -597,7 +597,7 @@ const Chatmain = () => {
                         <div>
                           <p
                             className={`${
-                              mode ? "bg-slate-700" : "bg-slate-200"
+                              mode ? "bg-slate-700" : "bg-slate-300"
                             } max-w-[45rem] rounded-tr-2xl rounded-bl-2xl py-2 px-5`}
                           >
                             Fight account night night night Lorem ipsum dolor
@@ -616,131 +616,77 @@ const Chatmain = () => {
                     </li>
                     <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
                       <div className="flex flex-row-reverse items-start gap-4">
-                        <div className="relative w-8 h-8">
-                          <img
-                            src={profile}
-                            alt="profile/img"
-                            className="w-8 h-8 rounded-full"
-                          />
-                        </div>
-                        <div>
-                          <p
-                            className={`${
-                              mode ? "bg-slate-700" : "bg-slate-200"
-                            } max-w-[45rem] rounded-tl-2xl rounded-br-2xl py-2 px-5`}
-                          >
-                            orem ipsum dolor sit amet consectetur adipisicing
-                            elit. Nisi dignissimos rerum veritatis quod quasi
-                            necessitatibus illum, quisquam dolore nihil ipsa
-                            aperiam delectus cumque porro illo optio nostrum
-                            perspiciatis qui aspernatur harum iste minima?
-                            Maiores numquam vitae quas ex impedit provident ut
-                            consequuntur, excepturi id pariatur mollitia esse
-                            quisquam distinctio itaque!
-                          </p>
-                        </div>
+                        <p
+                          className={`${
+                            mode ? "bg-slate-700" : "bg-slate-300"
+                          } max-w-[45rem] rounded-tl-2xl rounded-br-2xl py-2 px-5`}
+                        >
+                          orem ipsum dolor sit amet consectetur adipisicing
+                          elit. Nisi dignissimos rerum veritatis quod quasi
+                          necessitatibus illum, quisquam dolore nihil ipsa
+                          aperiam delectus cumque porro illo optio nostrum
+                          perspiciatis qui aspernatur harum iste minima? Maiores
+                          numquam vitae quas ex impedit provident ut
+                          consequuntur, excepturi id pariatur mollitia esse
+                          quisquam distinctio itaque!
+                        </p>
                       </div>
                     </li>
                     <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
                       <div className="flex flex-row-reverse items-start gap-4">
-                        <div className="relative w-8 h-8">
-                          <img
-                            src={profile}
-                            alt="profile/img"
-                            className="w-8 h-8 rounded-full"
-                          />
-                        </div>
-                        <div>
-                          <p
-                            className={`${
-                              mode ? "bg-slate-700" : "bg-slate-200"
-                            } max-w-[45rem] rounded-tl-2xl rounded-br-2xl py-2 px-5`}
-                          >
-                            orem ipsum dolor sit amet consectetur adipisicing
-                            elit. Nisi dignissimos rerum veritatis quod quasi
-                          </p>
-                        </div>
+                        <p
+                          className={`${
+                            mode ? "bg-slate-700" : "bg-slate-300"
+                          } max-w-[45rem] rounded-tl-2xl rounded-br-2xl py-2 px-5`}
+                        >
+                          orem ipsum dolor sit amet consectetur adipisicing
+                          elit. Nisi dignissimos rerum veritatis quod quasi
+                        </p>
                       </div>
                     </li>
                     <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
                       <div className="flex flex-row-reverse items-start gap-4">
-                        <div className="relative w-8 h-8">
-                          <img
-                            src={profile}
-                            alt="profile/img"
-                            className="w-8 h-8 rounded-full"
-                          />
-                        </div>
-                        <div>
-                          <p
-                            className={`${
-                              mode ? "bg-slate-700" : "bg-slate-200"
-                            } max-w-[45rem] rounded-tl-2xl rounded-br-2xl py-2 px-5`}
-                          >
-                            orem ipsum
-                          </p>
-                        </div>
+                        <p
+                          className={`${
+                            mode ? "bg-slate-700" : "bg-slate-300"
+                          } max-w-[45rem] rounded-tl-2xl rounded-br-2xl py-2 px-5`}
+                        >
+                          orem ipsum
+                        </p>
                       </div>
                     </li>
                     <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
                       <div className="flex flex-row-reverse items-start gap-4">
-                        <div className="relative w-8 h-8">
-                          <img
-                            src={profile}
-                            alt="profile/img"
-                            className="w-8 h-8 rounded-full"
-                          />
-                        </div>
-                        <div>
-                          <p
-                            className={`${
-                              mode ? "bg-slate-700" : "bg-slate-200"
-                            } max-w-[45rem] rounded-tl-2xl rounded-br-2xl py-2 px-5`}
-                          >
-                            Lorem
-                          </p>
-                        </div>
+                        <p
+                          className={`${
+                            mode ? "bg-slate-700" : "bg-slate-300"
+                          } max-w-[45rem] rounded-tl-2xl rounded-br-2xl py-2 px-5`}
+                        >
+                          Lorem
+                        </p>
                       </div>
                     </li>
                     <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
                       <div className="flex flex-row-reverse items-start gap-4">
-                        <div className="relative w-8 h-8">
-                          <img
-                            src={profile}
-                            alt="profile/img"
-                            className="w-8 h-8 rounded-full"
-                          />
-                        </div>
-                        <div>
-                          <p
-                            className={`${
-                              mode ? "bg-slate-700" : "bg-slate-200"
-                            } max-w-[45rem] rounded-tl-2xl rounded-br-2xl py-2 px-5`}
-                          >
-                            orem ipsum dolor sit amet consectetur adipisicing
-                            elit. Nisi dignissimos
-                          </p>
-                        </div>
+                        <p
+                          className={`${
+                            mode ? "bg-slate-700" : "bg-slate-300"
+                          } max-w-[45rem] rounded-tl-2xl rounded-br-2xl py-2 px-5`}
+                        >
+                          orem ipsum dolor sit amet consectetur adipisicing
+                          elit. Nisi dignissimos
+                        </p>
                       </div>
                     </li>
                     <li className="flex flex-row-reverse items-center justify-between mr-5 my-2">
                       <div className="flex flex-row-reverse items-start gap-4">
-                        <div className="relative w-8 h-8">
-                          <img
-                            src={profile}
-                            alt="profile/img"
-                            className="w-8 h-8 rounded-full"
-                          />
-                        </div>
-                        <div>
-                          <p
-                            className={`${
-                              mode ? "bg-slate-700" : "bg-slate-200"
-                            } max-w-[45rem] rounded-tl-2xl rounded-br-2xl py-2 px-5`}
-                          >
-                            orem ipsum dolor
-                          </p>
-                        </div>
+                        <p
+                          className={`${
+                            mode ? "bg-slate-700" : "bg-slate-300"
+                          } max-w-[45rem] rounded-tl-2xl rounded-br-2xl py-2 px-5`}
+                        >
+                          orem ipsum dolor
+                        </p>
                       </div>
                     </li>
                     <li
@@ -757,7 +703,7 @@ const Chatmain = () => {
                         <div>
                           <p
                             className={`${
-                              mode ? "bg-slate-700" : "bg-slate-200"
+                              mode ? "bg-slate-700" : "bg-slate-300"
                             } max-w-[45rem] rounded-tr-2xl rounded-bl-2xl py-2 px-5`}
                           >
                             Hello!!!!!!!
@@ -779,7 +725,7 @@ const Chatmain = () => {
                         <div>
                           <p
                             className={`${
-                              mode ? "bg-slate-700" : "bg-slate-200"
+                              mode ? "bg-slate-700" : "bg-slate-300"
                             } max-w-[45rem] rounded-tr-2xl rounded-bl-2xl py-2 px-5`}
                           >
                             Hello!!!!!!!
@@ -801,7 +747,7 @@ const Chatmain = () => {
                         <div>
                           <p
                             className={`${
-                              mode ? "bg-slate-700" : "bg-slate-200"
+                              mode ? "bg-slate-700" : "bg-slate-300"
                             } max-w-[45rem] rounded-tr-2xl rounded-bl-2xl py-2 px-5`}
                           >
                             Hello!!!!!!!
@@ -823,7 +769,7 @@ const Chatmain = () => {
                         <div>
                           <p
                             className={`${
-                              mode ? "bg-slate-700" : "bg-slate-200"
+                              mode ? "bg-slate-700" : "bg-slate-300"
                             } max-w-[45rem] rounded-tr-2xl rounded-bl-2xl py-2 px-5`}
                           >
                             Hello!!!!!!!
