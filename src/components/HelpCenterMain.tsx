@@ -79,10 +79,11 @@ const HelpCenterMain = () => {
                       <img src={gift} alt="rocket" />
                       <h6 className="text-2xl">Getting Started</h6>
                     </div>
-                    <div className="flex items-start justify-center flex-col">
-                      <p>Are you a new customer wondering</p>
-                      <p>how to get started?</p>
-                    </div>
+                    <ul className="flex items-start justify-center flex-col">
+                      <li>Account</li>
+                      <li>Authentication</li>
+                      <li>Billing</li>
+                    </ul>
                     <button className="uppercase">14 articles</button>
                   </div>
                   <div className="flex items-start justify-center flex-col gap-3 pl-5 drop-shadow-lg hover:drop-shadow-none transition-all duration-300 bg-slate-800 w-80 h-64 rounded-lg">
@@ -90,10 +91,11 @@ const HelpCenterMain = () => {
                       <img src={gift} alt="rocket" />
                       <h6 className="text-2xl">Orders</h6>
                     </div>
-                    <div className="flex items-start justify-center flex-col">
-                      <p>Are you a new customer wondering</p>
-                      <p>how to get started?</p>
-                    </div>
+                    <ul className="flex items-start justify-center flex-col">
+                      <li>Account</li>
+                      <li>Authentication</li>
+                      <li>Billing</li>
+                    </ul>
                     <button className="uppercase">4 articles</button>
                   </div>
                   <div className="flex items-start justify-center flex-col gap-3 pl-5 drop-shadow-lg hover:drop-shadow-none transition-all duration-300 bg-slate-800 w-80 h-64 rounded-lg">
@@ -101,10 +103,11 @@ const HelpCenterMain = () => {
                       <img src={gift} alt="rocket" />
                       <h6 className="text-2xl">Safety and Security</h6>
                     </div>
-                    <div className="flex items-start justify-center flex-col">
-                      <p>Are you a new customer wondering</p>
-                      <p>how to get started?</p>
-                    </div>
+                    <ul className="flex items-start justify-center flex-col">
+                      <li>Account</li>
+                      <li>Authentication</li>
+                      <li>Billing</li>
+                    </ul>
                     <button className="uppercase">10 articles</button>
                   </div>
                   <div className="flex items-start justify-center flex-col gap-3 pl-5 drop-shadow-lg hover:drop-shadow-none transition-all duration-300 bg-slate-800 w-80 h-64 rounded-lg">
@@ -114,10 +117,11 @@ const HelpCenterMain = () => {
                         <h6 className="text-2xl">Rules and Policies</h6>
                       </div>
                     </div>
-                    <div className="flex items-start justify-center flex-col">
-                      <p>Are you a new customer wondering</p>
-                      <p>how to get started?</p>
-                    </div>
+                    <ul className="flex items-start justify-center flex-col">
+                      <li>Account</li>
+                      <li>Authentication</li>
+                      <li>Billing</li>
+                    </ul>
                     <button className="uppercase">14 articles</button>
                   </div>
                   <div className="flex items-start justify-center flex-col gap-3 pl-5 drop-shadow-lg hover:drop-shadow-none transition-all duration-300 bg-slate-800 w-80 h-64 rounded-lg">
@@ -125,10 +129,11 @@ const HelpCenterMain = () => {
                       <img src={gift} alt="rocket" />
                       <h6 className="text-2xl">Chats</h6>
                     </div>
-                    <div className="flex items-start justify-center flex-col">
-                      <p>Are you a new customer wondering</p>
-                      <p>how to get started?</p>
-                    </div>
+                    <ul className="flex items-start justify-center flex-col">
+                      <li>Account</li>
+                      <li>Authentication</li>
+                      <li>Billing</li>
+                    </ul>
                     <button className="uppercase">14 articles</button>
                   </div>
                   <div className="flex items-start justify-center flex-col gap-3 pl-5 drop-shadow-lg hover:drop-shadow-none transition-all duration-300 bg-slate-800 w-80 h-64 rounded-lg">
@@ -136,12 +141,59 @@ const HelpCenterMain = () => {
                       <img src={gift} alt="rocket" />
                       <h6 className="text-2xl">Connections</h6>
                     </div>
-                    <div className="flex items-start justify-center flex-col">
+                    <ul className="flex items-start justify-center flex-col">
+                      <li>Account</li>
+                      <li>Authentication</li>
+                      <li>Billing</li>
+                    </ul>
+                    <button className="uppercase">14 articles</button>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center flex-col justify-center gap-3 my-24 bg-slate-700 py-24">
+                <h6 className="text-2xl">Keep Learning</h6>
+                <div className="flex items-start justify-center flex-wrap gap-6">
+                  <div className="flex items-center justify-center flex-col gap-3 border w-96 h-64 rounded-lg">
+                    <img src={gift} alt="rocket" />
+                    <h6 className="text-2xl">First Steps</h6>
+                    <div className="flex items-center justify-center flex-col">
                       <p>Are you a new customer wondering</p>
                       <p>how to get started?</p>
                     </div>
-                    <button className="uppercase">14 articles</button>
+                    <button className="uppercase">Read more</button>
                   </div>
+                  <div className="flex items-center justify-center flex-col gap-3 border w-96 h-64 rounded-lg">
+                    <img src={gift} alt="rocket" />
+                    <h6 className="text-2xl">First Steps</h6>
+                    <div className="flex items-center justify-center flex-col">
+                      <p>Are you a new customer wondering</p>
+                      <p>how to get started?</p>
+                    </div>
+                    <button className="uppercase">Read more</button>
+                  </div>
+                  <div className="flex items-center justify-center flex-col gap-3 border w-96 h-64 rounded-lg">
+                    <img src={gift} alt="rocket" />
+                    <h6 className="text-2xl">First Steps</h6>
+                    <div className="flex items-center justify-center flex-col">
+                      <p>Are you a new customer wondering</p>
+                      <p>how to get started?</p>
+                    </div>
+                    <button className="uppercase">Read more</button>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center flex-col justify-center gap-3 my-24">
+                <h6 className="text-2xl">Still need help?</h6>
+
+                <p>
+                  Our specialists are always happy to help. Contact us during
+                  standard business hours or email us
+                </p>
+                <p>24/7 and we'll get back to you.</p>
+
+                <div className="flex items-center gap-5">
+                  <button className="uppercase bg-blue-600 px-5 py-2">visit our community</button>
+                  <button className="uppercase bg-blue-600 px-5 py-2">Contact Us</button>
                 </div>
               </div>
             </div>
