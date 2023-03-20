@@ -37,7 +37,7 @@ const UserProfileMain = () => {
                   />
                   <div>
                     <h4 className="text-3xl">Belle Ferguson</h4>
-                    <div className="flex items-center gap-5">
+                    <div className="flex items-center gap-3">
                       <div className="flex items-center gap-1">
                         <SiAltiumdesigner className="w-6 h-6" />
                         <span>UX Designer</span>
@@ -84,48 +84,81 @@ const UserProfileMain = () => {
             <button className="uppercase bg-blue-600 px-5 py-2 font-bold">
               Profile
             </button>
-            <button className="uppercase px-5 py-2">Team</button>
-            <button className="uppercase px-5 py-2">Projects</button>
-            <button className="uppercase px-5 py-2">Connected</button>
+            <button className="uppercase border border-blue-600 px-5 py-2">
+              Team
+            </button>
+            <button className="uppercase border border-blue-600 px-5 py-2">
+              Projects
+            </button>
+            <button className="uppercase border border-blue-600 px-5 py-2">
+              Connected
+            </button>
           </div>
           <div className="flex justify-between mx-5 gap-5 my-5">
             <div className="flex items-center flex-col w-4/12 gap-5">
               <div
-                className={`flex rounded-xl ${
+                className={`flex rounded-xl w-full ${
                   mode ? "bg-slate-800" : "bg-slate-200"
                 }`}
               >
                 <div className="p-5">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Suscipit dignissimos voluptas explicabo fugit quia ad maxime
-                  odio quaerat. Velit modi nostrum laborum, ullam neque vitae
-                  saepe sed. Distinctio dolore molestiae eveniet delectus a
-                  ipsam nobis laborum hic, magni numquam accusamus, quia
-                  tempora, autem aperiam! Accusamus accusantium placeat
-                  perferendis aut debitis!
-                  <ul>
-                    <li>1</li>
-                    <li>1</li>
-                    <li>1</li>
-                    <li>1</li>
-                    <li>1</li>
-                    <li>1</li>
+                  <ul className="flex flex-col gap-3">
+                    <li>
+                      <span className="font-bold">Full Name:</span> Belle
+                      Ferguson
+                    </li>
+                    <li>
+                      <span className="font-bold">Status:</span> active
+                    </li>
+                    <li>
+                      <span className="font-bold">Role:</span> Developer
+                    </li>
+                    <li>
+                      <span className="font-bold">Country:</span> USA
+                    </li>
+                    <li>
+                      <span className="font-bold">Language:</span> English
+                    </li>
+                    <li>CONTACTS</li>
+                    <li>
+                      <span className="font-bold">Contact:</span> (123) 456-7890
+                    </li>
+                    <li>
+                      <span className="font-bold">Skype:</span> john.doe
+                    </li>
+                    <li>
+                      <span className="font-bold">Email:</span>
+                      john.doe@example.com
+                    </li>
+                    <li>TEAMS</li>
+                    <li>
+                      <span className="font-bold">Backend Developer:</span> (126
+                      Members)
+                    </li>
+                    <li>
+                      <span className="font-bold">VueJS Developer:</span> (98
+                      Members)
+                    </li>
                   </ul>
                 </div>
               </div>
               <div
-                className={`flex rounded-xl ${
+                className={`flex rounded-xl w-full ${
                   mode ? "bg-slate-800" : "bg-slate-200"
                 }`}
               >
                 <div className="p-5">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Suscipit dignissimos voluptas explicabo fugit quia ad maxime
-                  odio quaerat. Velit modi nostrum laborum, ullam neque vitae
-                  saepe sed. Distinctio dolore molestiae eveniet delectus a
-                  ipsam nobis laborum hic, magni numquam accusamus, quia
-                  tempora, autem aperiam! Accusamus accusantium placeat
-                  perferendis aut debitis!
+                  <ul className="flex flex-col gap-3">
+                    <li>
+                      <span className="font-bold">Task Compiled:</span> 13.5k
+                    </li>
+                    <li>
+                      <span className="font-bold">Connections:</span> 897
+                    </li>
+                    <li>
+                      <span className="font-bold">Projects Compiled:</span> 146
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -136,56 +169,322 @@ const UserProfileMain = () => {
                 }`}
               >
                 <div className="p-5">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Suscipit dignissimos voluptas explicabo fugit quia ad maxime
+                  <h5 className="text-xl pb-5">Activity Timeline</h5>
                   <ul>
-                    <li>12</li>
-                    <li>12</li>
-                    <li>12</li>
-                    <li>12</li>
-                    <li>12</li>
-                    <li>12</li>
-                    <li>12</li>
-                    <li>12</li>
-                    <li>12</li>
-                    <li>12</li>
+                    <li className="relative flex gap-6 pb-5 items-baseline">
+                      <div className=" before:absolute before:top-5 before:left-[10px] before:h-full before:w-[1px] before:bg-gray-400">
+                        <div className="flex items-center justify-center w-5 h-5 bg-slate-500 rounded-full">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={1.5}
+                            stroke="currentColor"
+                            className="w-3 h-3"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M4.5 12.75l6 6 9-13.5"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div className="text-sm">
+                        <p>27.08.2023</p>
+                        <p className="text-lg mt-2">
+                          12 Invoices have been paid
+                        </p>
+                        <p>Invoices have been paid to the company</p>
+                        <p className="mt-2">Invoices.pdf</p>
+                      </div>
+                    </li>
+                    <li className="relative flex gap-6 pb-5 items-baseline">
+                      <div className=" before:absolute before:top-5 before:left-[10px] before:h-full before:w-[1px] before:bg-gray-400">
+                        <div className="flex items-center justify-center w-5 h-5 bg-slate-500 rounded-full">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={1.5}
+                            stroke="currentColor"
+                            className="w-3 h-3"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M4.5 12.75l6 6 9-13.5"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div className="text-sm">
+                        <p>27.08.2023</p>
+                        <p className="text-lg mt-2">Meeting with john</p>
+                        <p>React Project meeting with john @10:15am</p>
+                        <div className="mt-2">
+                          <p>John Doe (Client)</p>
+                          <p>CEO of Kelly Group</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="relative flex gap-6 pb-5 items-baseline">
+                      <div className=" before:absolute before:top-5 before:left-[10px] before:h-full before:w-[1px] before:bg-gray-400">
+                        <div className="flex items-center justify-center w-5 h-5 bg-slate-500 rounded-full">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={1.5}
+                            stroke="currentColor"
+                            className="w-3 h-3"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M4.5 12.75l6 6 9-13.5"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div className="text-sm">
+                        <p>27.08.2023</p>
+                        <p className="text-lg mt-2">
+                          Create a new react project for client
+                        </p>
+                        <p>Add files to new design folder</p>
+                      </div>
+                    </li>
+                    <li className="relative flex gap-6 pb-5 items-baseline">
+                      <div>
+                        <div className="flex items-center justify-center w-5 h-5 bg-slate-500 rounded-full">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={1.5}
+                            stroke="currentColor"
+                            className="w-3 h-3"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M4.5 12.75l6 6 9-13.5"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div className="text-sm">
+                        <p>27.08.2023</p>
+                        <p className="text-lg mt-2">
+                          12 Create invoices for client
+                        </p>
+                        <p>
+                          Weekly review of freshly prepared design for our new
+                          app.
+                        </p>
+                      </div>
+                    </li>
                   </ul>
-                  odio quaerat. Velit modi nostrum laborum, ullam neque vitae
-                  saepe sed. Distinctio dolore molestiae eveniet delectus a
-                  ipsam nobis laborum hic, magni numquam accusamus, quia
-                  tempora, autem aperiam! Accusamus accusantium placeat
-                  perferendis aut debitis!
                 </div>
               </div>
               <div className="flex items-center gap-5">
                 <div
-                  className={`flex rounded-xl ${
+                  className={`flex rounded-xl w-1/2 ${
                     mode ? "bg-slate-800" : "bg-slate-200"
                   }`}
                 >
-                  <div className="p-5">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Suscipit dignissimos voluptas explicabo fugit quia ad maxime
-                    odio quaerat. Velit modi nostrum laborum, ullam neque vitae
-                    saepe sed. Distinctio dolore molestiae eveniet delectus a
-                    ipsam nobis laborum hic, magni numquam accusamus, quia
-                    tempora, autem aperiam! Accusamus accusantium placeat
-                    perferendis aut debitis!
+                  <div className="p-5 w-full">
+                    <div className="flex items-center justify-between">
+                      <h5 className="text-2xl mb-5">Connection</h5>
+                      ...
+                    </div>
+                    <ul className="flex flex-col gap-3 w-full">
+                      <li className="w-full flex items-center justify-between">
+                        <div className="flex items-center gap-3">
+                          <img
+                            src={profile}
+                            alt=""
+                            className="w-10 h-10 rounded-full"
+                          />
+                          <div>
+                            <h5>Cecilia Payne</h5>
+                            <span>45 Connections</span>
+                          </div>
+                        </div>
+                        <div className="flex items-center justify-center bg-slate-600 w-8 h-8 rounded">
+                          +
+                        </div>
+                      </li>
+                      <li className="w-full flex items-center justify-between">
+                        <div className="flex items-center gap-3">
+                          <img
+                            src={profile}
+                            alt=""
+                            className="w-10 h-10 rounded-full"
+                          />
+                          <div>
+                            <h5>Cecilia Payne</h5>
+                            <span>45 Connections</span>
+                          </div>
+                        </div>
+                        <div className="flex items-center justify-center bg-slate-600 w-8 h-8 rounded">
+                          +
+                        </div>
+                      </li>
+                      <li className="w-full flex items-center justify-between">
+                        <div className="flex items-center gap-3">
+                          <img
+                            src={profile}
+                            alt=""
+                            className="w-10 h-10 rounded-full"
+                          />
+                          <div>
+                            <h5>Cecilia Payne</h5>
+                            <span>45 Connections</span>
+                          </div>
+                        </div>
+                        <div className="flex items-center justify-center bg-slate-600 w-8 h-8 rounded">
+                          +
+                        </div>
+                      </li>
+                      <li className="w-full flex items-center justify-between">
+                        <div className="flex items-center gap-3">
+                          <img
+                            src={profile}
+                            alt=""
+                            className="w-10 h-10 rounded-full"
+                          />
+                          <div>
+                            <h5>Cecilia Payne</h5>
+                            <span>45 Connections</span>
+                          </div>
+                        </div>
+                        <div className="flex items-center justify-center bg-slate-600 w-8 h-8 rounded">
+                          +
+                        </div>
+                      </li>
+                      <li className="w-full flex items-center justify-between">
+                        <div className="flex items-center gap-3">
+                          <img
+                            src={profile}
+                            alt=""
+                            className="w-10 h-10 rounded-full"
+                          />
+                          <div>
+                            <h5>Cecilia Payne</h5>
+                            <span>45 Connections</span>
+                          </div>
+                        </div>
+                        <div className="flex items-center justify-center bg-slate-600 w-8 h-8 rounded">
+                          +
+                        </div>
+                      </li>
+                    </ul>
+                    <div className="mt-10">
+                      <button className=" w-full h-10 bg-green-900">
+                        View All Connectons
+                      </button>
+                    </div>
                   </div>
                 </div>
                 <div
-                  className={`flex rounded-xl ${
+                  className={`flex rounded-xl w-1/2 ${
                     mode ? "bg-slate-800" : "bg-slate-200"
                   }`}
                 >
-                  <div className="p-5">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Suscipit dignissimos voluptas explicabo fugit quia ad maxime
-                    odio quaerat. Velit modi nostrum laborum, ullam neque vitae
-                    saepe sed. Distinctio dolore molestiae eveniet delectus a
-                    ipsam nobis laborum hic, magni numquam accusamus, quia
-                    tempora, autem aperiam! Accusamus accusantium placeat
-                    perferendis aut debitis!
+                  <div className="p-5 w-full">
+                    <div className="flex items-center justify-between">
+                      <h5 className="text-2xl mb-5">Teams</h5>
+                      ...
+                    </div>
+                    <ul className="flex flex-col gap-3 w-full">
+                      <li className="w-full flex items-center justify-between">
+                        <div className="flex items-center gap-3">
+                          <img
+                            src={profile}
+                            alt=""
+                            className="w-10 h-10 rounded-full"
+                          />
+                          <div>
+                            <h5>React Developers</h5>
+                            <span>72 Members</span>
+                          </div>
+                        </div>
+                        <div className="flex items-center justify-center bg-slate-600 py-1 px-3 rounded">
+                          <button>Developer</button>
+                        </div>
+                      </li>
+                      <li className="w-full flex items-center justify-between">
+                        <div className="flex items-center gap-3">
+                          <img
+                            src={profile}
+                            alt=""
+                            className="w-10 h-10 rounded-full"
+                          />
+                          <div>
+                            <h5>Support Team</h5>
+                            <span>122 Members</span>
+                          </div>
+                        </div>
+                        <div className="flex items-center justify-center bg-slate-600 py-1 px-3 rounded">
+                          <button>Designer</button>
+                        </div>
+                      </li>
+                      <li className="w-full flex items-center justify-between">
+                        <div className="flex items-center gap-3">
+                          <img
+                            src={profile}
+                            alt=""
+                            className="w-10 h-10 rounded-full"
+                          />
+                          <div>
+                            <h5>UI Designer</h5>
+                            <span>7 Members</span>
+                          </div>
+                        </div>
+                        <div className="flex items-center justify-center bg-slate-600 py-1 px-3 rounded">
+                          <button>Support</button>
+                        </div>
+                      </li>
+                      <li className="w-full flex items-center justify-between">
+                        <div className="flex items-center gap-3">
+                          <img
+                            src={profile}
+                            alt=""
+                            className="w-10 h-10 rounded-full"
+                          />
+                          <div>
+                            <h5>Vue.js Developers</h5>
+                            <span>289 Members</span>
+                          </div>
+                        </div>
+                        <div className="flex items-center justify-center bg-slate-600 py-1 px-3 rounded">
+                          <button>Developer</button>
+                        </div>
+                      </li>
+                      <li className="w-full flex items-center justify-between">
+                        <div className="flex items-center gap-3">
+                          <img
+                            src={profile}
+                            alt=""
+                            className="w-10 h-10 rounded-full"
+                          />
+                          <div>
+                            <h5>Digital Marketing</h5>
+                            <span>24 Members</span>
+                          </div>
+                        </div>
+                        <div className="flex items-center justify-center bg-slate-600 py-1 px-3 rounded">
+                          <button>Marketing</button>
+                        </div>
+                      </li>
+                    </ul>
+                    <div className="mt-10">
+                      <button className=" w-full h-10 bg-green-900">
+                        View All Teams
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
