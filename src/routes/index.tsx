@@ -13,6 +13,12 @@ import View from "../pages/user/View";
 import Preview from "../pages/invoice/Preview";
 import Edit from "../pages/invoice/Edit";
 import Add from "../pages/invoice/Add";
+import HelpCenter from "../pages/HelpCenter";
+import UserProfile from "../pages/UserProfile";
+import AccountSetting from "../pages/AccountSetting";
+import AccountPricing from "../pages/AccountPricing";
+import FAQ from "../pages/FAQ";
+import Miscellaneous from "../pages/Miscellaneous";
 
 const Dashboard = React.lazy(() => import("../pages/Dashboard"));
 
@@ -73,6 +79,30 @@ const router: RouteObject[] = [
   {
     path: "/pages/athentication/verifyemail",
     element: <VerifyEmail />,
+  },
+  {
+    path: "/pages/helpcenter",
+    element: <HelpCenter />,
+  },
+  {
+    path: "/pages/userprofile",
+    element: <UserProfile />,
+  },
+  {
+    path: "/pages/accountsetting",
+    element: <AccountSetting />,
+  },
+  {
+    path: "/pages/accountpricing",
+    element: <AccountPricing />,
+  },
+  {
+    path: "/pages/faq",
+    element: <FAQ />,
+  },
+  {
+    path: "/pages/miscellaneous",
+    element: <Miscellaneous />,
   },
 ];
 

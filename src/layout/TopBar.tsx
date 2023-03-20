@@ -20,7 +20,7 @@ const TopBar = () => {
           className={`flex items-center justify-between z-40 rounded-md px-7 py-2 w-full ${
             mode
               ? "bg-slate-800 text-slate-300"
-              : "bg-slate-200 drop-shadow-lg hover:drop-shadow-none transition-all duration-300 text-slate-800"
+              : "bg-slate-200 drop-shadow-lg text-slate-800"
           }`}
         >
           <div

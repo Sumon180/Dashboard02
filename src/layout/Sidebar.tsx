@@ -423,28 +423,41 @@ const Sidebar = () => {
                         <li className=" cursor-pointer">Two Steps</li>
                       </NavLink>
                     </ul>
-                    <li className="flex items-center gap-3">
-                      <span className="w-2 h-2 bg-indigo-500"></span>Help Center
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <span className="w-2 h-2 bg-indigo-500"></span>User
-                      Profile
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <span className="w-2 h-2 bg-indigo-500"></span>Account
-                      Setting
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <span className="w-2 h-2 bg-indigo-500"></span>Account
-                      Pricing
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <span className="w-2 h-2 bg-indigo-500"></span>FAQ
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <span className="w-2 h-2 bg-indigo-500"></span>
-                      Miscellaneous
-                    </li>
+                    <NavLink to="/pages/helpcenter">
+                      <li className="flex items-center gap-3 cursor-pointer">
+                        <span className="w-2 h-2 bg-indigo-500"></span>Help
+                        Center
+                      </li>
+                    </NavLink>
+                    <NavLink to="/pages/userprofile">
+                      <li className="flex items-center gap-3 cursor-pointer">
+                        <span className="w-2 h-2 bg-indigo-500"></span>User
+                        Profile
+                      </li>
+                    </NavLink>
+                    <NavLink to="/pages/accountsetting">
+                      <li className="flex items-center gap-3 cursor-pointer">
+                        <span className="w-2 h-2 bg-indigo-500"></span>Account
+                        Setting
+                      </li>
+                    </NavLink>
+                    <NavLink to="/pages/accountpricing">
+                      <li className="flex items-center gap-3 cursor-pointer">
+                        <span className="w-2 h-2 bg-indigo-500"></span>Account
+                        Pricing
+                      </li>
+                    </NavLink>
+                    <NavLink to="/pages/faq">
+                      <li className="flex items-center gap-3 cursor-pointer">
+                        <span className="w-2 h-2 bg-indigo-500"></span>FAQ
+                      </li>
+                    </NavLink>
+                    <NavLink to="/pages/miscellaneous">
+                      <li className="flex items-center gap-3 cursor-pointer">
+                        <span className="w-2 h-2 bg-indigo-500"></span>
+                        Miscellaneous
+                      </li>
+                    </NavLink>
                   </ul>
                 </div>
                 <NavLink to="/">

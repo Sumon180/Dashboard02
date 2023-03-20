@@ -1,6 +1,9 @@
 import { useState } from "react";
+import { useSelector } from "react-redux";
+import { toggleDarkMode } from "../app/darkModeSlice";
 
 const Setting = () => {
+  const mode = useSelector(toggleDarkMode);
   const [setting, setSetting] = useState(false);
 
   const toggle = () => {
@@ -35,25 +38,36 @@ const Setting = () => {
       </div>
 
       <div
-        className={`fixed top-0 right-0 bottom-0 cursor-pointer transition-all duration-300 ease-in-out w-96 bg-red-400 z-50 ${
-          setting ? "block" : "hidden"
-        }`}
+        className={`fixed top-0 right-0 bottom-0 cursor-pointer transition-all duration-300 ease-in-out w-96  z-50 ${
+          mode ? "bg-[#1b212e]" : " bg-slate-100"
+        } ${setting ? "block" : "hidden"}`}
       >
-        <div onClick={toggle} className="bg-black py-3">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
+        <div
+          onClick={toggle}
+          className={`flex items-center justify-between  py-3 px-5 ${
+            mode ? "bg-[#141B2D] text-gray-200" : "bg-slate-200 text-slate-800"
+          }`}
+        >
+          <div>
+            <h3 className=" font-bold text-2xl">THEME CUSTOMIZER</h3>
+            <p>Customize & Preview in Real Time</p>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </>
