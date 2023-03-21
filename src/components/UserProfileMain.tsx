@@ -1,4 +1,6 @@
 import profile from "../assets/image/profile.jpg";
+import react from "../assets/image/react.png";
+import vieu from "../assets/image/view.png";
 import { SiAltiumdesigner } from "react-icons/si";
 import { useSelector } from "react-redux";
 import { toggleDarkMode } from "../app/darkModeSlice";
@@ -493,26 +495,81 @@ const UserProfileMain = () => {
                   mode ? "bg-slate-800" : "bg-slate-200"
                 }`}
               >
-                <div className="p-5">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Suscipit dignissimos voluptas explicabo fugit quia ad maxime
-                  <ul>
-                    <li>12</li>
-                    <li>12</li>
-                    <li>12</li>
-                    <li>12</li>
-                    <li>12</li>
-                    <li>12</li>
-                    <li>12</li>
-                    <li>12</li>
-                    <li>12</li>
-                    <li>12</li>
-                  </ul>
-                  odio quaerat. Velit modi nostrum laborum, ullam neque vitae
-                  saepe sed. Distinctio dolore molestiae eveniet delectus a
-                  ipsam nobis laborum hic, magni numquam accusamus, quia
-                  tempora, autem aperiam! Accusamus accusantium placeat
-                  perferendis aut debitis!
+                <div className="p-5 w-full">
+                  <h3 className=" font-bold text-xl border-b pb-4">
+                    Project List
+                  </h3>
+                  <table className="w-full">
+                    <tr>
+                      <th>PROJECT</th>
+                      <th>LEADER</th>
+                      <th>PROGRESS</th>
+                      <th>ACTIONS</th>
+                    </tr>
+                    <tr>
+                      <td className="flex items-center gap-3">
+                        <img
+                          src={react}
+                          alt="profile/img"
+                          className="w-8 h-8 rounded-full "
+                        />
+                        <div>
+                          <h5>BGC eCommerce App</h5>
+                          <p>React Project</p>
+                        </div>
+                      </td>
+                      <td>122/240</td>
+                      <td>
+                        <p>78%</p>
+                        <div className="w-20 h-2 bg-green-900 rounded-full">
+                          <div className="w-10 h-2 bg-green-500 rounded-full"></div>
+                        </div>
+                      </td>
+                      <td>18:42</td>
+                    </tr>
+                    <tr>
+                      <td className="flex items-center gap-3">
+                        <img
+                          src={vieu}
+                          alt="profile/img"
+                          className="w-8 h-8 rounded-full "
+                        />
+                        <div>
+                          <h5>BGC eCommerce App</h5>
+                          <p>React Project</p>
+                        </div>
+                      </td>
+                      <td>122/240</td>
+                      <td>
+                        <p>78%</p>
+                        <div className="w-20 h-2 bg-red-900 rounded-full">
+                          <div className="w-5 h-2 bg-red-500 rounded-full"></div>
+                        </div>
+                      </td>
+                      <td>18:42</td>
+                    </tr>
+                    <tr>
+                      <td className="flex items-center gap-3">
+                        <img
+                          src={vieu}
+                          alt="profile/img"
+                          className="w-8 h-8 rounded-full "
+                        />
+                        <div>
+                          <h5>BGC eCommerce App</h5>
+                          <p>React Project</p>
+                        </div>
+                      </td>
+                      <td>122/240</td>
+                      <td>
+                        <p>78%</p>
+                        <div className="w-20 h-2 bg-blue-900 rounded-full">
+                          <div className="w-16 h-2 bg-blue-500 rounded-full"></div>
+                        </div>
+                      </td>
+                      <td>18:42</td>
+                    </tr>
+                  </table>
                 </div>
               </div>
             </div>
