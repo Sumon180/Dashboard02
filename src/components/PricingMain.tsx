@@ -4,19 +4,12 @@ import enterprise from "../assets/image/enterprise.png";
 import laptopGirl from "../assets/image/laptop-girl.png";
 import { useSelector } from "react-redux";
 import { toggleDarkMode } from "../app/darkModeSlice";
-import { BsThreeDotsVertical } from "react-icons/bs";
 import { useState } from "react";
-import { AiOutlineCalendar } from "react-icons/ai";
-import { SiAltiumdesigner } from "react-icons/si";
 
 const PricingMain = () => {
   const mode = useSelector(toggleDarkMode);
-  const [pop, setPop] = useState(false);
   const [user, setUser] = useState(false);
 
-  const popup = () => {
-    setPop(!pop);
-  };
   const users = () => {
     setUser(!user);
     console.log("Hello");

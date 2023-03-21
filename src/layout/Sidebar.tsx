@@ -14,6 +14,7 @@ const Sidebar = () => {
   const [auth, setAuth] = useState(false);
   const [invoice, setInvoce] = useState(false);
   const [user, setUser] = useState(false);
+  const [miscellaneou, setMiscellaneous] = useState(false);
   const mode = useSelector(toggleDarkMode);
   const nav = useSelector(toggleState);
 
@@ -34,6 +35,9 @@ const Sidebar = () => {
   const users = () => {
     setUser(!user);
     console.log("Hello");
+  };
+  const Miscellaneous = () => {
+    setMiscellaneous(!miscellaneou);
   };
 
   return (
@@ -452,12 +456,50 @@ const Sidebar = () => {
                         <span className="w-2 h-2 bg-indigo-500"></span>FAQ
                       </li>
                     </NavLink>
-                    <NavLink to="/pages/miscellaneous">
-                      <li className="flex items-center gap-3 cursor-pointer">
-                        <span className="w-2 h-2 bg-indigo-500"></span>
-                        Miscellaneous
-                      </li>
-                    </NavLink>
+
+                    <li
+                      onClick={Miscellaneous}
+                      className="flex items-center gap-3 cursor-pointer"
+                    >
+                      <span className="w-2 h-2 bg-indigo-500"></span>
+                      Miscellaneous
+                    </li>
+                    <ul
+                      className={`${
+                        miscellaneou ? "block" : "hidden"
+                      } flex flex-col gap-3 ml-6`}
+                    >
+                      <NavLink
+                        to="/pages/miscellaneous/comingsoon"
+                        target="_blank"
+                      >
+                        <li>Coming Soon</li>
+                      </NavLink>
+                      <NavLink
+                        to="/pages/miscellaneous/Undermaintenence"
+                        target="_blank"
+                      >
+                        <li>Under Maintenance</li>
+                      </NavLink>
+                      <NavLink
+                        to="/pages/miscellaneous/pagenotfound404"
+                        target="_blank"
+                      >
+                        <li>Page Not Found-404</li>
+                      </NavLink>
+                      <NavLink
+                        to="/pages/miscellaneous/notauthorise401"
+                        target="_blank"
+                      >
+                        <li>Not Authorized</li>
+                      </NavLink>
+                      <NavLink
+                        to="/pages/miscellaneous/servererror500"
+                        target="_blank"
+                      >
+                        <li>Server Error</li>
+                      </NavLink>
+                    </ul>
                   </ul>
                 </div>
                 <NavLink to="/">

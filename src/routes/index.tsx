@@ -18,7 +18,12 @@ import UserProfile from "../pages/UserProfile";
 import AccountSetting from "../pages/AccountSetting";
 import AccountPricing from "../pages/AccountPricing";
 import FAQ from "../pages/FAQ";
-import Miscellaneous from "../pages/Miscellaneous";
+import Miscellaneous from "../pages/ComingSoon";
+import ComingSoon from "../pages/ComingSoon";
+import UnderMaintenence from "../pages/UnderMaintenence";
+import ServerError from "../pages/ServerError";
+import NotAuthorise from "../pages/NotAuthorise";
+import PageNotFound from "../pages/PageNotFound";
 
 const Dashboard = React.lazy(() => import("../pages/Dashboard"));
 
@@ -101,8 +106,24 @@ const router: RouteObject[] = [
     element: <FAQ />,
   },
   {
-    path: "/pages/miscellaneous",
-    element: <Miscellaneous />,
+    path: "/pages/miscellaneous/comingsoon",
+    element: <ComingSoon />,
+  },
+  {
+    path: "/pages/miscellaneous/Undermaintenence",
+    element: <UnderMaintenence />,
+  },
+  {
+    path: "/pages/miscellaneous/pagenotfound404",
+    element: <PageNotFound />,
+  },
+  {
+    path: "/pages/miscellaneous/notauthorise401",
+    element: <NotAuthorise />,
+  },
+  {
+    path: "/pages/miscellaneous/servererror500",
+    element: <ServerError />,
   },
 ];
 
