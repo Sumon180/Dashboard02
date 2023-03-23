@@ -25,6 +25,7 @@ import ServerError from "../pages/ServerError";
 import NotAuthorise from "../pages/NotAuthorise";
 import PageNotFound from "../pages/PageNotFound";
 import Typographyy from "../pages/Typographyy";
+import BasicCard from "../pages/card/Basic";
 
 const Dashboard = React.lazy(() => import("../pages/Dashboard"));
 
@@ -69,6 +70,10 @@ const router: RouteObject[] = [
   {
     path: "/user/view",
     element: <View />,
+  },
+  {
+    path: "/card/basic",
+    element: <BasicCard />,
   },
   {
     path: "/pages/athentication/login",

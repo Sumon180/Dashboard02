@@ -196,7 +196,7 @@ const Sidebar = () => {
                     <span>Calender</span>
                   </li>
                 </NavLink>
-                <NavLink to="">
+               
                   <li
                     onClick={invoices}
                     className={`${
@@ -243,7 +243,7 @@ const Sidebar = () => {
                       )}
                     </div>
                   </li>
-                </NavLink>
+                
                 <ul
                   className={`${
                     invoice ? "block" : "hidden"
@@ -592,7 +592,7 @@ const Sidebar = () => {
                     card ? "block" : "hidden"
                   } flex flex-col gap-3 ml-6`}
                 >
-                  <NavLink to="/" target="_blank">
+                  <NavLink to="/card/basic">
                     <li>Basic</li>
                   </NavLink>
                   <NavLink to="/">
