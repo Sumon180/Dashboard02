@@ -24,6 +24,7 @@ import UnderMaintenence from "../pages/UnderMaintenence";
 import ServerError from "../pages/ServerError";
 import NotAuthorise from "../pages/NotAuthorise";
 import PageNotFound from "../pages/PageNotFound";
+import Typographyy from "../pages/Typographyy";
 
 const Dashboard = React.lazy(() => import("../pages/Dashboard"));
 
@@ -34,12 +35,16 @@ const router: RouteObject[] = [
     errorElement: <ErrorPage />,
   },
   {
-    path: "email",
+    path: "/email",
     element: <Email />,
   },
   {
-    path: "chat",
+    path: "/chat",
     element: <Chat />,
+  },
+  {
+    path: "/typography",
+    element: <Typographyy />,
   },
   {
     path: "/invoice/list",

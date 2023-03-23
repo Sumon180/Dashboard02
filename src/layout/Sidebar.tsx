@@ -15,6 +15,7 @@ const Sidebar = () => {
   const [invoice, setInvoce] = useState(false);
   const [user, setUser] = useState(false);
   const [miscellaneou, setMiscellaneous] = useState(false);
+  const [card, setCard] = useState(false);
   const mode = useSelector(toggleDarkMode);
   const nav = useSelector(toggleState);
 
@@ -38,6 +39,9 @@ const Sidebar = () => {
   };
   const Miscellaneous = () => {
     setMiscellaneous(!miscellaneou);
+  };
+  const Cards = () => {
+    setCard(!card);
   };
 
   return (
@@ -511,7 +515,7 @@ const Sidebar = () => {
                     <span className={`text-slate-400`}>UI ELEMENTS</span>
                   </li>
                 </NavLink>
-                <NavLink to="/">
+                <NavLink to="/typography">
                   <li
                     className={`${
                       mode ? "hover:bg-slate-700" : "hover:bg-slate-300"
@@ -554,35 +558,56 @@ const Sidebar = () => {
                     <span>Icons</span>
                   </li>
                 </NavLink>
-                <NavLink to="/">
-                  <li
-                    className={`${
-                      mode ? "hover:bg-slate-700" : "hover:bg-slate-300"
-                    } flex items-center justify-between w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
+
+                <li
+                  onClick={Cards}
+                  className={`${
+                    mode ? "hover:bg-slate-700" : "hover:bg-slate-300"
+                  } flex items-center justify-between w-full h-10 pl-2 hover:bg-slate-200 cursor-pointer  rounded hover:bg-blue-gray-100"
                         
                     `}
-                  >
-                    <div className="flex items-center gap-3">
-                      <RxCardStackMinus className="w-6 h-6" />
+                >
+                  <div className="flex items-center gap-3">
+                    <RxCardStackMinus className="w-6 h-6" />
 
-                      <span>Cards</span>
-                    </div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-4 h-4"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                      />
-                    </svg>
-                  </li>
-                </NavLink>
+                    <span>Cards</span>
+                  </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-4 h-4"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </li>
+                <ul
+                  className={` my-5 ${
+                    card ? "block" : "hidden"
+                  } flex flex-col gap-3 ml-6`}
+                >
+                  <NavLink to="/" target="_blank">
+                    <li>Basic</li>
+                  </NavLink>
+                  <NavLink to="/">
+                    <li>Advance</li>
+                  </NavLink>
+                  <NavLink to="/">
+                    <li>Statistics</li>
+                  </NavLink>
+                  <NavLink to="/">
+                    <li>Widgets</li>
+                  </NavLink>
+                  <NavLink to="/">
+                    <li>Actions</li>
+                  </NavLink>
+                </ul>
                 <NavLink to="/">
                   <li
                     className={`${

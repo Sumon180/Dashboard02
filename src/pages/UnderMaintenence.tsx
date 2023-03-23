@@ -3,8 +3,8 @@ import underMaintenance from "../assets/image/under-maintenance.png";
 const UnderMaintenence = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center overflow-x-hidden h-screen bg-blue-900">
-        <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center justify-center gap-10 overflow-x-hidden h-screen bg-slate-800">
+        <div className="flex flex-col items-center gap-3">
           <h2 className="text-5xl text-white">Under Maintenance! 🚧</h2>
           <p className=" text-white">
             Sorry for the inconvenience but we're performing some maintenance at
@@ -14,7 +14,7 @@ const UnderMaintenence = () => {
             Back to Home
           </button>
         </div>
-        <img src={underMaintenance} alt="" />
+        <img src={underMaintenance} alt="" className="w-96 h-96" />
       </div>
     </>
   );

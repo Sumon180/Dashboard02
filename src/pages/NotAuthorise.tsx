@@ -4,7 +4,7 @@ import TopBar from "../layout/TopBar";
 const NotAuthorise = () => {
   return (
     <>
-      <div className="flex items-center justify-center overflow-x-hidden h-screen bg-blue-900">
+      <div className="flex items-center justify-center overflow-x-hidden h-screen bg-slate-800">
         <div className="flex flex-col items-center">
           <h2 className="text-5xl text-white">You are not authorized! 🔐</h2>
           <p className=" text-white">
