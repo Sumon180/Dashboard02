@@ -242,7 +242,7 @@ const CardBasicMain = () => {
                   </button>
                 </div>
                 <div
-                  className={`flex flex-row-reverse rounded-lg w-8/12 ${
+                  className={`flex flex-row-reverse overflow-hidden rounded-lg w-8/12 ${
                     mode
                       ? "bg-slate-800 text-slate-300"
                       : "bg-slate-200 text-slate-800"
@@ -298,6 +298,9 @@ const CardBasicMain = () => {
                       PDAs, there are a myriad of choices.
                     </p>
                   </div>
+                  <button className="uppercase bg-blue-600 px-3 py-2">
+                    Contact Now
+                  </button>
                 </div>
                 <div
                   className={`rounded-lg w-4/12 ${
@@ -329,6 +332,14 @@ const CardBasicMain = () => {
                           <p className="mb-5">18 mutual friends</p>
                         </div>
                       </div>
+                    </div>
+                    <div className="flex gap-3 pb-5">
+                      <button className="uppercase bg-blue-600 px-3 py-2">
+                        Contact Now
+                      </button>
+                      <button className="uppercase bg-blue-600 px-3 py-2">
+                        Contact Now
+                      </button>
                     </div>
                   </div>
                 </div>
